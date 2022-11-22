@@ -1,12 +1,12 @@
 @import './base/vars';
 @import './base/reset';
 @import './base/body';
+@import './base/button';
 
 @import './utils/mixins';
 @import './utils/visually-hidden';
 @import './utils/container';
 
-@import './components/button';
 @import './components/menu-mob';
 @import './components/header';
 @import './components/hero';
