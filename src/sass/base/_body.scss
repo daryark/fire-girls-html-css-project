@@ -1,8 +1,8 @@
 body {
-  background-color: var(--primary-text-color);
-  color: ;
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
 
-  font-family: var(--main-font);
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height-auto);
