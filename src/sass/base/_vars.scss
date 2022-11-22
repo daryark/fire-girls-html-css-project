@@ -1,15 +1,15 @@
 :root {
   --main-color: #131313;
   --second-color: #fcfcfc;
-  --icon-color: ;
-  --accent-color: ;
-  --button-hover: ;
+
+  --accent-color: #f8d24e;
+  --button-hover: #0a8817;
 
   --bg-color: #5bb676;
 
-  --letter-spacing: 0.03em;
-  --line-height-auto: 1.17;
-
-  // --big-letter-spacing: 0.06em;
-  // --inverse-color: ;
+  --letter-spacing: 0.04em;
+  // ! Mostly used in title of block - (indentical to box height in Figma);
+  --line-height-auto: 1.2;
+  // ! is for all paragraphs of text - 176%;
+  --text-line-height: 1.76;
 }
