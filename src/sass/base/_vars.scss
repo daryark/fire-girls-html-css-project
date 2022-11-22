@@ -1,15 +1,30 @@
 :root {
-  --main-color: #131313;
-  --second-color: #fcfcfc;
+  /* Fonts */
+  --main-font: 'Montserrat', sans-serif;
+  --secondary-font: 'Seymour One', sans-serif;
+
+  /* Text colors */
+  --primary-text-color: #FCFCFC;
+  --secondary-text-color: #131313;
+  --text-white-color: #ffffff;
+  --text-contacts-color: #D6936D;
+  
+  /* Bg colors */
+
+  --main-color: ;
+  --second-color: ;
+
   --icon-color: ;
   --accent-color: ;
   --button-hover: ;
 
   --bg-color: #5bb676;
 
-  --letter-spacing: 0.03em;
-  --line-height-auto: 1.17;
+  --letter-spacing: 0.04em;
+  --line-height-auto: 1.76;
 
   // --big-letter-spacing: 0.06em;
   // --inverse-color: ;
+
+
 }
