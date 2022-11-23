@@ -1,7 +1,25 @@
-.test {
-  outline: 1px solid tomato;
+.section__pretitle {
+  font-family: var(--main-font);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
 
-.product-list {
-  list-style: none;
+.section__title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--secondary-text-color);
+}
+
+.product__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
