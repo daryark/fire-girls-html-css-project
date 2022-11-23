@@ -1,0 +1,258 @@
+:root {
+  --main-color: ;
+  --second-color: ;
+  --icon-color: ;
+  --accent-color: ;
+  --button-hover: ;
+  --bg-color: ;
+  --letter-spacing: 0.03em;
+  --line-height-auto: 1.17;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  fill: currentColor;
+}
+
+address {
+  font-style: normal;
+}
+
+input,
+label:not([type=checkbox]) {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type=checkbox].visually-hidden,
+input[type=radio].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.header {
+  background-color: var(--bg-color);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 1200px;
+  }
+}
+
+.header__main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  color: var(--accent-color);
+  width: 48px;
+  height: 44px;
+  margin-top: 12px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 440px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 0;
+    width: 60px;
+    height: 65px;
+  }
+}
+
+.header__navigation {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .header__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+    margin: 40px 247px 20px 269px;
+  }
+}
+
+.header__navigation-item-link {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  line-height: 1.25;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__navigation-item-link:focus, .header__navigation-item-link:hover {
+  color: #f8d24e;
+}
+.header__navigation-item-link--current {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  line-height: 1.25;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__navigation-item-link--current:focus, .header__navigation-item-link--current:hover {
+  color: #f8d24e;
+}
+
+@media screen and (min-width: 480px) {
+  .header__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 32px;
+    margin-top: 24px;
+    width: 152px;
+    height: 42px;
+    color: var(--secondary-text-color);
+    background-color: #f8d24e;
+    border-radius: 10px;
+    border: 0;
+    font-size: 14px;
+    line-height: 1.21;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__button {
+    margin-left: auto;
+  }
+}
+
+.menu-toggle__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  color: #fff;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-toggle__button {
+    margin-top: 29px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-toggle__button {
+    display: none;
+  }
+}
+.menu-toggle__button:hover, .menu-toggle__button:focus {
+  fill: #f8d24e;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.test {
+  outline: 1px solid tomato;
+}
+
+.test {
+  outline: 1px solid tomato;
+}/*# sourceMappingURL=index.css.map */
