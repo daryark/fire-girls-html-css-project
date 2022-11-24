@@ -37,10 +37,25 @@
   &__text-start {
     max-width: 232px;
     font-size: 18px;
+    @include tab{
+      max-width: 352px;
+      font-size: 26px;
+    }
+    @include pc{
+      font-weight: 400;
+      font-size: 30px;      
+    }
   }
   &__text-end {
     max-width: 200px;
     font-size: 34px;
+    @include tab{
+      font-size: 48px;
+      letter-spacing: 0.06em;
+    }
+    @include pc{
+      font-size: 58px;      
+    }
   }
   &__bottom {
     display: flex;
