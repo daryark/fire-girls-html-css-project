@@ -38,6 +38,7 @@
 .btn-secondary{
   border-color: var(--accent-color);
   border-style: solid;
+
   background-color: transparent;
 
   @include transition(background-color);
