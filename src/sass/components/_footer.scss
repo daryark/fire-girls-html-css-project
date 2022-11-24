@@ -1,3 +1,75 @@
-.test {
-  outline: 1px solid tomato;
+.footer{
+  &__container{
+    margin-top: 60px;
+    @include tab{
+      margin-top: 40px;
+    }
+    @include pc{
+      margin-top: 120px;
+    }
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    @include tab{
+      justify-content: space-between;
+    }
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    line-height: var(--line-height-auto);
+  }
+  &__text-start {
+    max-width: 232px;    
+    font-size: 18px;  
+  }
+  &__text-end {
+    max-width: 200px;    
+    font-size: 34px;
+  }
+  &__bottom {
+  }
+  &__rights {
+  }
 }
+
+.soc-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 20px;
+  @include tab{
+    gap: 32px;
+  }
+  @include pc{
+    gap: 40px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    @include tab{
+      gap: 30px;
+    }
+  }
+  &__item {
+  }
+  &__link {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
+  &__icon {
+  }
+  &__tell {
+  }
+  &__call {
+  }
+}
+
