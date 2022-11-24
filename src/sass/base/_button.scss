@@ -1,6 +1,6 @@
-.bnt{
+.btn{
     border-radius: 10px;
-    border: transparent;
+    border-color: transparent;
     
     background-color: var(--accent-color);
     color: var(--secondary-text-color);
@@ -11,6 +11,7 @@
     text-align: center;
 
     @include transition(background-color);
+    @include transition();
 
     padding: 12px 34px;
     min-width: 114px;
@@ -20,8 +21,7 @@
       
       min-width: 216px;    
     }
-    @include pc{
-    
+    @include pc{    
       min-width: 216px;    
     }
 }
@@ -35,17 +35,20 @@
   color: var(--primary-text-color);
 }
 
-.bnt-secondary{
-  border: var(--accent-color);
-    
+.btn-secondary{
+  border-color: var(--accent-color);
+  border-style: solid;
   background-color: transparent;
+
+  @include transition(background-color);
+  @include transition();
 }
 
-.bnt-secondary:hover {
-  background-color: var(--button-hover);
+.btn-secondary:hover {
+  border-color: var(--button-hover);
 }
 
-.bnt-secondary:focus {
-  background-color: var(--button-hover);
+.btn-secondary:focus {
+  border-color: var(--button-hover);
   color: var(--primary-text-color);
 }

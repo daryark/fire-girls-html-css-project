@@ -1,1 +1,139 @@
-<section>Contacts</section>
+<section class="container contacts__container">
+    <ul class="contacts__list">
+        <li class="contacts__item">
+            <p class="contacts__title">CAFE</p>
+            <address class="contacts__location">
+                <p class="contacts__city">Chicago</p>
+                <p class="contacts__address">10340 Ridgeland Ave,<br> Chicago Ridge, IL 60415, USA</p>
+            </address>
+            <div class="contacts__working-time">
+                <div class="contacts__week">
+                    <p class="contacts__week-days">Monday - Friday</p>
+                    <p class="contacts__hours">06:00 AM - 10:00 PM</p>
+                </div>
+                <div class="contacts__weekend">
+                    <p class="contacts__weekend-days">Saturday - Sunday</p>
+                    <p class="contacts__weekend-hours">08:00 AM - 16:00 PM</p>
+                </div>
+                
+            </div>
+            <ul class="contacts__contact-list contact-list">
+                <li class="contact-list__item">
+                    <a href="tel:+610383766284" class="contact-list__link">+61(0) 383 766 284</a>
+                </li>
+                <li class="contact-list__item">
+                    <a href="mailto:noreply@envato.com" class="contact-list__link">noreply@envato.com</a>
+                </li>
+            </ul>
+        </li>
+        <li class="contacts__item">
+            <p class="contacts__title">FOODTRUCK</p>
+            <address class="contacts__location">
+                <p class="contacts__city">Los Angeles</p>
+                <p class="contacts__address">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</p>
+            </address>
+            <div class="contacts__working-time">
+                <div class="contacts__week">
+                    <p class="contacts__week-days">Monday - Friday</p>
+                    <p class="contacts__hours">06:00 AM - 10:00 PM</p>
+                </div>
+                <div class="contacts__weekend">
+                    <p class="contacts__weekend-days">Saturday - Sunday</p>
+                    <p class="contacts__weekend-hours">08:00 AM - 16:00 PM</p>
+                </div>        
+            </div>
+            <ul class="contacts__contact-list contact-list">
+                <li class="contact-list__item">
+                    <a href="tel:+610383766284" class="contact-list__link">+61(0) 383 766 284</a>
+                </li>
+                <li class="contact-list__item">
+                    <a href="mailto:noreply@envato.com" class="contact-list__link">noreply@envato.com</a>
+                </li>
+            </ul>
+        </li>
+        <li class="contacts__item">
+            <p class="contacts__title">CAFE</p>
+            <address class="contacts__location">
+                <p class="contacts__city">New York</p>
+                <p class="contacts__address">726 Sterling Pl, Brooklyn, NY 11222, USA</p>
+            </address>
+            <div class="contacts__working-time">
+                <div class="contacts__week">
+                    <p class="contacts__week-days">Monday - Friday</p>
+                    <p class="contacts__hours">06:00 AM - 10:00 PM</p>
+                </div>
+                <div class="contacts__weekend">
+                    <p class="contacts__weekend-days">Saturday - Sunday</p>
+                    <p class="contacts__weekend-hours">08:00 AM - 16:00 PM</p>
+                </div>
+        
+            </div>
+            <ul class="contacts__contact-list contact-list">
+                <li class="contact-list__item">
+                    <a href="tel:+610383766284" class="contact-list__link">+61(0) 383 766 284</a>
+                </li>
+                <li class="contact-list__item">
+                    <a href="mailto:noreply@envato.com" class="contact-list__link">noreply@envato.com</a>
+                </li>
+            </ul>
+        </li>        
+    </ul>
+    <div class="contacts__buttons">
+        <button type="button" class="contacts__btn btn" data-modal-open>Our Locations
+            <svg width="5" height="10" class="contacts__icon">
+                <use href="#"></use>
+            </svg>
+        </button>
+        <button type="button" class="contacts__btn btn btn-secondary" data-modal-open>Franchise
+            <svg width="5" height="10" class="contacts__icon">
+                <use href="#"></use>
+            </svg>
+        </button>
+    </div>
+</section>
+<!--
+<div class="backdrop visually-hidden" data-modal>
+    <div class="loc-modal">
+        <button type="button" class="loc-modal__btn" data-modal-close>
+            <svg class="loc-modal__close" width="13.33" height="13.37">
+                <use href="#"></use>
+            </svg>
+        </button>
+        <p class="loc-modal__title">Our Locations</p>
+        <img class="loc-modal__img-map" alt="map"></img>
+        <a href="#" class="loc-modal__link-map btn">Open map</a>
+    </div>
+</div>
+<div class="backdrop visually-hidden" data-modal>
+    <div class="fran-modal">
+        <button type="button" class="fran-modal__btn" data-modal-close>
+            <svg class="fran-modal__close" width="13.33" height="13.37">
+                <use href="#"></use>
+            </svg>
+        </button>
+        <p class="fran-modal__title">Thank you for your interest in owning an Ice Cream shop</p>
+        <p class="fran-modal__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once
+        the application process resumes, we will contact you for further information. Please fill out the contact information
+        below and we will reach out for additional information. We appreciate your patience.</p>
+        <form class="fran-modal__form">            
+            <div class="fran-modal__field">
+                <label for="user-name" class="modal-label">Name</label>
+                <input id="user-name" type="text" class="modal-input" name="user-name" />
+            </div>
+            <div class="fran-modal__field">
+                <label for="user-tel" class="modal-label">Phone</label>
+                <input id="user-tel" type="tel" class="modal-input" name="user-tel" />
+            </div>
+            <div class="fran-modal__field">
+                <label for="user-mail" class="modal-label">Email</label>                
+                <input id="user-mail" type="email" class="modal-input" name="user-mail" />                
+            </div>
+            <div class="fran-modal__field">
+                <label for="user-comment" class="modal-label">Comment</label>
+                <input id="user-comment" type="text" class="modal-input" name="user-comment" />
+            </div>
+        </form>
+        <button type="submit" class="fran-modal__btn btn"></button>
+    </div>
+</div>
+
