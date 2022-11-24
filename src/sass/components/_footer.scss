@@ -43,17 +43,21 @@
     font-size: 34px;
   }
   &__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
     @include tab{
       padding-top: 12px;
+      padding-bottom: 12px;
     }    
   }
   &__rights {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
-    text-align: center;
+    
 
     color: #7A7A7A;
     @include tab{
