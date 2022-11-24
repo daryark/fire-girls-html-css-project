@@ -120,6 +120,9 @@
   }
   &__btn{
     min-width: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__icon{
     margin-left: 7px;
@@ -138,5 +141,5 @@
 
 .contact-list {
   margin-top: 24px;
-  color: var(--secondary-text-color);
+  color: var(--secondary-text-color);  
 }
