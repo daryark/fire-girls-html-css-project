@@ -1,4 +1,15 @@
-.contacts {
+.contacts{
+  position: relative;
+  &__container{
+    position: absolute;
+    padding-bottom: 60px;
+    @include tab{
+      padding-bottom: 40px;
+    }
+    @include pc{
+      padding-bottom: 120px;
+    }
+  }
   &__list{
     display: flex;
     justify-content: center;
@@ -93,10 +104,10 @@
     }
   }
   &__working-time {
-    margin-top: 24px;
+    padding-top: 24px;
     padding-bottom: 24px;
     @include tab{
-      margin-top: 32px;
+      padding-top: 32px;
       padding-bottom: 32px;
     }
   }
