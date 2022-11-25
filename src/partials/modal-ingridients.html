@@ -1,0 +1,101 @@
+<div class="backdrop is-hidden" data modal>
+  <div class="modal">
+    <div class="modal">
+      <button class="modal-close" data-modal-close>
+        <svg class="close-button" width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+      <h2>Chololate icecream</h2>
+      <div>
+        <ul class="ingridients__list">
+          <li class="ingridients__item">
+            <p class="card__number">320</p>
+            <p class="card__text">kcal</p>
+          </li>
+          <li class="ingridients__item">
+            <p class="card__number">4g</p>
+            <p class="card__text">Protein...</p>
+          </li>
+          <li class="ingridients__item">
+            <p class="card__number">8,2g</p>
+            <p class="card__text">Fats</p>
+          </li>
+          <li class="ingridients__item">
+            <p class="card__number">40,4g</p>
+            <p class="card__text">Carbs</p>
+          </li>
+        </ul>
+        <h3>Ingredients</h3>
+        <ul class="composition__list">
+          <li class="composition__item">
+            Milk
+            <p class="composition__text">100ml</p>
+          </li>
+          <li class="composition__item">
+            Belgian chocolate
+            <p class="composition__text">20g</p>
+          </li>
+          <li class="composition__item">
+            Cream
+            <p class="composition__text">150 ml</p>
+          </li>
+          <li class="composition__item">
+            Cocoa powder
+            <p class="composition__text">30g</p>
+          </li>
+          <li class="composition__item">
+            Sugar
+            <p class="composition__text">40g</p>
+          </li>
+          <li class="composition__item">
+            Vanilla sugar
+            <p class="composition__text">10g</p>
+          </li>
+        </ul>
+        <form>
+          <ul class="modal-list list">
+            <li class="modal-item">
+              <label for="user-name" class="modal-label"></label>
+              <input
+                type="text"
+                class="modal-input"
+                name="user-name"
+                minlength="2"
+                id="user-name"
+                placeholder="Name"
+                required
+              />
+              <svg class="icon-modal" width="18" height="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </li>
+            <li class="modal-item">
+              <label for="tel" class="modal-label"></label>
+              <input
+                type="tel"
+                class="modal-input"
+                name="user-tel"
+                id="tel"
+                placeholder="Phone"
+                required
+              />
+            </li>
+            <li class="modal-item">
+              <label for="user-comment" class="text"></label>
+              <textarea
+                name="user-comment"
+                class="modal-comment"
+                id="user-comment"
+                rows="2"
+                placeholder="Comment"
+                required
+              ></textarea>
+            </li>
+          </ul>
+          <button class="modal-button" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
