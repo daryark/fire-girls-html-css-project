@@ -1,6 +1,7 @@
 .product__section {
   padding-top: 60px;
   padding-bottom: 60px;
+<<<<<<< Updated upstream
   max-width: 1200px;
   cursor: url(../images/cursor.svg), auto;
   background-image: url(../images/products/mobile/fonproductsx1-min.jpg);
@@ -28,6 +29,10 @@
 }
 
 
+=======
+}
+
+>>>>>>> Stashed changes
 .section__pretitle {
   font-family: var(--main-font);
   font-weight: 800;
@@ -36,6 +41,7 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+<<<<<<< Updated upstream
 
   @include tab {
     font-size: 22px;
@@ -45,6 +51,9 @@
     font-size: 30px;
     line-height: 1.23;
   }
+=======
+  margin-bottom: 12px;
+>>>>>>> Stashed changes
 }
 
 .section__title {
@@ -57,6 +66,7 @@
   letter-spacing: 0.04em;
   color: var(--secondary-text-color);
   margin-bottom: 40px;
+<<<<<<< Updated upstream
 
   @include tab {
     font-size: 34px;
@@ -258,3 +268,62 @@
 //       border: 3px solid #131313;
 //     }
 // }
+=======
+}
+
+.product__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product__picture {
+  margin-bottom: 31px;
+
+  @include mob{
+  max-width: 200px;
+  }
+   
+  @include tab {
+  width: 200px;
+  }
+
+  @include pc {
+  width: 302px;
+  }
+}
+
+
+    // @mixin mob {
+    //   @media screen and(min-width: 480px) {
+    //     @content;
+    //   }
+    // }
+  
+    // @mixin tab {
+    //   @media screen and(min-width: 768px) {
+    //     @content;
+    //   }
+    // }
+  
+    // @mixin pc {
+    //   @media screen and(min-width: 1200px) {
+    //     @content;
+    //   }
+
+.product__item {
+  display: block;
+}
+
+.product__title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+  margin-bottom: 40px;
+}
+
+>>>>>>> Stashed changes
