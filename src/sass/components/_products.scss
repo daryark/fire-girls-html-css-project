@@ -1,6 +1,7 @@
 .product__section {
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 1200px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,21 +72,18 @@
   }
 }
 
-
 .product__list {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 168px;
+  @include grid(168px, wrap);
+
 
   @include tab {
-    gap: 16px;
+  @include grid(16px, wrap);
   }
   
   @include pc {
-    gap: 29px;
+  @include grid(29px, wrap)  
   }
-
 }
 
 .product__item {
@@ -148,45 +146,37 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  // mobile screen
   background-image: url(../images/products/mobile/productsmobpic1x1-min.png);
-
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url(../images/products/mobile/productsmobpic1x2-min.png);
-  }
-
-  // tablet screen
-  @media screen and (min-width: 780px) {
-    top: -120px;
-    left: 12px;
-    width: 200px;
-    height: 197px;
-    background-image: url(../images/products/tablet/productstabpic1x1-min.png);
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/products/tablet/productstabpic1x2-min.png);
+    
+        @include retina {
+          background-image: url(../images/products/mobile/productsmobpic1x2-min.png);
+        }
+    
+        @include tab {
+        top: -120px;
+        left: 12px;
+        width: 200px;
+        height: 197px;
+          background-image: url(../images/products/tablet/productstabpic1x1-min.png);
+    
+          @include retina {
+            background-image: url(../images/products/tablet/productstabpic1x2-min.png);
+          }
+        }
+    
+        @include pc {
+        top: -183px;
+        left: 34px;
+        width: 302px;
+        height: 300px;
+        background-image: url(../images/products/desktop/productsdescpic1x1-min.png);
+    
+          @include retina {
+            background-image: url(../images/products/desktop/productsdescpic1x2-min.png);
+        }
+      }
     }
-  }
-
-  // desktop screen
-  @media screen and (min-width: 1200px) {
-    top: -183px;
-    left: 34px;
-    width: 302px;
-    height: 300px;
-    background-image: url(../images/products/desktop/productsdescpic1x1-min.png);
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image: url(../images/products/desktop/productsdescpic1x2-min.png);
-    }
-  }
-}
+    
 
 .product__item--yellow::after {
   content: '';
@@ -287,7 +277,6 @@
     }
   }
 }
-
 
 .product__text {
   display: flex;
