@@ -1,4 +1,9 @@
+.gallery {
+  position: relative;
+}
 .swiper {
+  position: absolute;
+  bottom: -98px;
   margin: 0 auto;
   display: block;
 
@@ -7,10 +12,12 @@
   background-color: rgb(237, 172, 172);
 
   @include tab {
+    bottom: -183px;
     max-width: 704px;
     max-height: 327px;
   }
   @include pc {
+    bottom: -324px;
     max-width: 1013px;
     max-height: 422px;
   }

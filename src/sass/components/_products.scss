@@ -1,5 +1,336 @@
-.test {
-  outline: 1px solid tomato;
+.product__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 1200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: url(../images/cursor.svg), auto;
+
+  background-image: url(../images/products/mobile/fonproductsx1-min.jpg);
+
+  @include retina {
+    background-image: url(../images/products/mobile/fonproductsx2-min.jpg);
+  }
+
+  @include tab {
+    background-image: url(../images/products/tablet/fon1tabx1-min.jpg);
+
+    @include retina {
+      background-image: url(../images/products/tablet/fon1tabx2-min.jpg);
+    }
+  }
+
+  @include pc {
+    background-image: url(../images/products/desktop/fon1descx1-min.jpg);
+
+    @include retina {
+      background-image: url(../images/products/desktop/fon1descx2-min.jpg);
+    }
+  }
+}
+
+.section__pretitle {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
+
+  @include tab {
+    font-size: 22px;
+  }
+
+  @include pc {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+}
+
+.section__title {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--secondary-text-color);
+  margin-bottom: 148px;
+
+  @include tab {
+    font-size: 34px;
+    margin-bottom: 200px;
+  }
+
+  @include pc {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 303px;
+  }
+}
+
+.product__list {
+  justify-content: center;
+  @include grid(168px);
+
+  @include tab {
+    @include grid(16px);
+  }
+
+  @include pc {
+    @include grid(29px);
+  }
+}
+
+.product__item {
+  display: block;
+  position: relative;
+  // width: 280px;
+  max-width: 440px;
+
+  @include tab {
+    width: 224px;
+  }
+
+  @include pc {
+    width: 370px;
+  }
+}
+
+.product__item::before {
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  top: -97px;
+  position: absolute;
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+
+  @include tab {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -108px;
+  }
+
+  @include pc {
+    width: 302px;
+    height: 300px;
+    border-radius: 302px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -167px;
+  }
+}
+
+.product__item--green::before {
+  box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+}
+
+.product__item--yellow::before {
+  box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+}
+
+.product__item--orange::before {
+  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+}
+
+.product__item::after {
+  content: '';
+  top: -108px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 197px;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include tab {
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 197px;
+  }
+
+  @include pc {
+    top: -183px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 302px;
+    height: 300px;
+  }
+}
+
+.product__item--green::after {
+  background-image: url(../images/products/mobile/productsmobpic1x1-min.png);
+
+  @include retina {
+    background-image: url(../images/products/mobile/productsmobpic1x2-min.png);
+  }
+
+  @include tab {
+    background-image: url(../images/products/tablet/productstabpic1x1-min.png);
+
+    @include retina {
+      background-image: url(../images/products/tablet/productstabpic1x2-min.png);
+    }
+  }
+  @include pc {
+    background-image: url(../images/products/desktop/productsdescpic1x1-min.png);
+
+    @include retina {
+      background-image: url(../images/products/desktop/productsdescpic1x2-min.png);
+    }
+  }
+}
+.product__item--yellow::after {
+  // mobile screen
+  background-image: url(../images/products/mobile/productsmobpic2x1-min.png);
+
+  @include retina {
+    background-image: url(../images/products/mobile/productsmobpic2x2-min.png);
+  }
+
+  // tablet screen
+  @include tab {
+    background-image: url(../images/products/tablet/productstabpic2x1-min.png);
+
+    @include retina {
+      background-image: url(../images/products/tablet/productstabpic2x2-min.png);
+    }
+  }
+
+  // desktop screen
+  @include pc {
+    background-image: url(../images/products/desktop/productsdescpic2x1-min.png);
+
+    @include retina {
+      background-image: url(../images/products/desktop/productsdescpic2x2-min.png);
+    }
+  }
+}
+
+.product__item--orange::after {
+  // mobile screen
+  background-image: url(../images/products/mobile/productsmobpic3x1-min.png);
+
+  @include retina {
+    background-image: url(../images/products/mobile/productsmobpic3x2-min.png);
+  }
+
+  // tablet screen
+  @include tab {
+    background-image: url(../images/products/tablet/productstabpic3x1-min.png);
+
+    @include retina {
+      background-image: url(../images/products/tablet/productstabpic3x2-min.png);
+    }
+  }
+
+  // desktop screen
+  @include pc {
+    background-image: url(../images/products/desktop/productsdescpic3x1-min.png);
+
+    @include retina {
+      background-image: url(../images/products/desktop/productsdescpic3x2-min.png);
+    }
+  }
+}
+
+.product__text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  border-radius: 24px;
+
+  @include tab {
+    border-radius: 15, 8px;
+  }
+
+  @include pc {
+    border-radius: 24px;
+  }
+}
+
+.product__text--green {
+  background-color: #aec6a5;
+}
+
+.product__text--yellow {
+  background-color: #efd478;
+}
+
+.product__text--orange {
+  background-color: #d6936d;
+}
+
+.product__title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: var(--line-height-auto);
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+  padding-top: 123px;
+  margin-bottom: 40px;
+  text-align: center;
+
+  @include tab {
+    padding-top: 108px;
+    font-size: 22px;
+  }
+
+  @include pc {
+    padding-top: 165px;
+    font-size: 30px;
+  }
+}
+
+.product__description {
+  font-size: 14px;
+  line-height: 1.76;
+  color: var(--secondary-text-color);
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-grow: 1;
+  margin-bottom: 53px;
+
+  @include tab {
+    padding-left: 26px;
+    padding-right: 26px;
+    margin-bottom: 50px;
+  }
+
+  @include pc {
+    font-size: 16px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin-bottom: 50px;
+  }
+}
+
+.product__btn {
+  background-color: inherit;
+  border: none;
+  display: block;
+  margin: auto;
+  padding-bottom: 16px;
+
+  @include tab {
+    padding-bottom: 12px;
+  }
+
+  @include pc {
+    padding-bottom: 60px;
+  }
 }
 .customer-review {
   color: var(--secondary-text-color);

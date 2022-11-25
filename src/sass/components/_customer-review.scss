@@ -1,3 +1,44 @@
-.test {
-  outline: 1px solid tomato;
+.customer-review {
+  width: 100%;
+  height: 1037px;
+  background-image: url(../images/gallery/mobile/fon4mobx1-min.jpg);
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: url(../images/gallery/mobile/fon4mobx2-min.jpg);
+  }
+
+  @include tab {
+    height: 1017px;
+    background-image: url(../images/gallery/tablet/fon2tabx1-min.jpg);
+    @include retina {
+      background-image: url(../images/gallery/tablet/fon2tabx2-min.jpg);
+    }
+  }
+  @include pc {
+    height: 1151px;
+    background-image: url(../images/gallery/desktop/fon2descx1-min.jpg);
+    @include retina {
+      background-image: url(../images/gallery/desktop/fon2descx2-min.jpg);
+    }
+  }
+
+  @media screen and(min-width: 1920px) {
+    background-image: url(../images/gallery/big-desctop/fon1920block4x1-min.jpg);
+    @include retina {
+      background-image: url(../images/gallery/big-desctop/fon1920block4x2-min.jpg);
+    }
+  }
+}
+
+.customer-review__name {
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+
+  @include tab {
+    font-size: 16px;
+  }
 }
