@@ -56,11 +56,12 @@
         }
     }
     &__title {
+        font-weight: 400;
         font-size: 16px;
         line-height: 1.5;
         color: var(--secondary-text-color);
         margin-bottom: 20px;
-        @include tab{
+        @include tab{            
             margin-bottom: 32px;
             font-size: 20px;
             line-height: 1.4;            
@@ -68,6 +69,7 @@
     }
     &__link-map {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
