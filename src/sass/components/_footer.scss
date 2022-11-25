@@ -1,6 +1,6 @@
-.footer {  
+.footer {
   &__container {
-    margin-top: 60px;    
+    margin-top: 60px;
     @include tab {
       margin-top: 40px;
     }
@@ -14,13 +14,13 @@
     gap: 60px;
     padding-bottom: 40px;
 
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 1px solid #e1e1e1;
     @include tab {
       flex-direction: row;
       justify-content: space-between;
       padding-bottom: 32px;
     }
-    @include pc{
+    @include pc {
       padding-bottom: 60px;
     }
   }
@@ -36,24 +36,24 @@
   &__text-start {
     max-width: 232px;
     font-size: 18px;
-    @include tab{
+    @include tab {
       max-width: 352px;
       font-size: 26px;
     }
-    @include pc{
+    @include pc {
       font-weight: 400;
-      font-size: 30px;      
+      font-size: 30px;
     }
   }
   &__text-end {
     max-width: 200px;
     font-size: 34px;
-    @include tab{
+    @include tab {
       font-size: 48px;
       letter-spacing: 0.06em;
     }
-    @include pc{
-      font-size: 58px;      
+    @include pc {
+      font-size: 58px;
     }
   }
   &__bottom {
@@ -62,24 +62,23 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    @include tab{
+    @include tab {
       padding-top: 12px;
       padding-bottom: 12px;
-    }    
+    }
   }
   &__rights {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
-    
 
-    color: #7A7A7A;
-    @include tab{
-      width: 298px;      
+    color: #7a7a7a;
+    @include tab {
+      width: 298px;
       line-height: 1.86;
       letter-spacing: 0.02em;
     }
-    @include pc{      
+    @include pc {
       font-size: 12px;
     }
   }
@@ -134,11 +133,12 @@
     font-weight: 700;
     color: var(--secondary-text-color);
     line-height: 1.86;
-    @include tab{     
+
+    @include tab {
       font-size: 14px;
-      max-width: 500px;
+      width: 310px;
     }
-    @include pc{
+    @include pc {
       font-size: 16px;
       letter-spacing: 0.02em;
     }
