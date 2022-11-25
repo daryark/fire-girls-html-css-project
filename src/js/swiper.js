@@ -1,6 +1,6 @@
 var swiper = new Swiper('.gallerySwiper', {
   autoplay: {
-    delay: 5000,
+    delay: 4500,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
