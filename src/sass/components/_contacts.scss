@@ -1,27 +1,31 @@
 .contacts{
   position: relative;
-    padding-bottom: 353px;
+    padding-bottom: 350px;
     height: 1029px;
     @include tab{
       height: 318px;
-      padding-bottom: 298px;
+      padding-bottom: 300px;
     }
     @include pc{
       height: 513px;
-      padding-bottom: 128px;
+      padding-bottom: 130px;
     }
   &__container{
     position: absolute;
-    top: -353px;
-    left: 20px;
+    top: -350px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 60px;
 
     @include tab{      
-      top: -298px;
+      top: -300px;
       left: 32px;
+      padding-bottom: 40px;
     }
     @include pc{      
-      top: -128px;
+      top: -130px;
       left: 32px;
+      padding-bottom: 120px;
     }
   }
   &__list{
