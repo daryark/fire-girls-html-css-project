@@ -73,7 +73,7 @@
         justify-content: center;
         align-items: center;
     }
-    &__img-map {
+    &__img-map{
         margin-bottom: 24px;
         width: 224px;
         height: 199px;
@@ -84,9 +84,12 @@
         }
     }
     &__button{
-        max-width: 134px;
+        font-size: 12px;
+        font-weight: 600;
+        width: 134px;
         max-height: 42px;
         @include tab{
+            font-size: 14px;
             width: 145px;
             max-height: 42px;
         }
