@@ -330,4 +330,9 @@
   @include pc {
     padding-bottom: 60px;
   }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
