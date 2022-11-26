@@ -1,5 +1,5 @@
 body {
-  background-color: var(--bg-green-color);
+  background-color: var(--bg-color);
   color: var(--primary-text-color);
 
   font-family: 'Montserrat', sans-serif;
@@ -7,10 +7,12 @@ body {
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height-auto);
 
-  @include tab{
+  cursor: url(../images/cursor.png), auto;
+
+  @include tab {
     font-size: 14px;
   }
-  @include pc{
+  @include pc {
     font-size: 16px;
   }
 }
