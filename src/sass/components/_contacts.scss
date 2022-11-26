@@ -1,17 +1,22 @@
 .contacts{
   position: relative;
+    padding-bottom: 353px;
+    @include tab{
+      padding-bottom: 298px;
+    }
+    @include pc{
+      padding-bottom: 128px;
+    }
   &__container{
     position: absolute;
     top: -353px;
     left: 20px;
-    padding-bottom: 60px;
-    @include tab{
-      padding-bottom: 40px;
+
+    @include tab{      
       top: -298px;
       left: 32px;
     }
-    @include pc{
-      padding-bottom: 120px;
+    @include pc{      
       top: -128px;
       left: 32px;
     }
