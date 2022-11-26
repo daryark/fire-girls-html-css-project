@@ -1,10 +1,13 @@
 .contacts{
   position: relative;
     padding-bottom: 353px;
+    height: 1029px;
     @include tab{
+      height: 318px;
       padding-bottom: 298px;
     }
     @include pc{
+      height: 513px;
       padding-bottom: 128px;
     }
   &__container{
