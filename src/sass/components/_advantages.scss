@@ -1,8 +1,7 @@
-.adv .container {
+.adv.container {
   margin: 0 auto;
   padding: 0px 45px 60px 45px;
 
-  // Не закривай стилі в max-width додатково, тоді не треба прописувати кожний раз повторювані властивості (і прибирай повторювання, все буде працювати😊)
   @media screen and (min-width: 768px) {
     padding: 0px 76px 204px 76px;
   }
@@ -17,8 +16,7 @@
 
 .adv {
   &__list {
-    // Якщо прибереш max-width, то стилі флекс також будуть працювати і на десктопі 😉
-    @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
       display: flex;
       gap: 80px;
       justify-content: center;
@@ -32,15 +30,9 @@
   &__card {
     text-align: center;
     font-weight: 700;
+    margin-bottom: 16px;
   }
-  // а оці два вже можна прибрати
-  &__card:first-child {
-    margin-bottom: 28px;
-  }
-  &__card:nth-child(2) {
-    margin-bottom: 22px;
-  }
-
+  
   &__wrap {
     width: 50px;
     height: 50px;
@@ -53,9 +45,8 @@
     margin: 0 auto;
   }
 
-  //Базове сімейство шрифтів (прописується один раз у боді, далі воно наслідується всіма), не потрібно повторювати код).
+  
   &__number {
-    font-family: 'Montserrat' 👈;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -81,7 +72,7 @@
     line-height: 1.7;
   }
 }
-.container {
+/* //.container {
   margin: 0 auto;
   padding: 42px 45px 64px 45px;
 
@@ -95,21 +86,10 @@
     margin: 0 auto👈;
     padding: 152px 16px 180px 16px;
   }
-}
+} */
 
 // Заглядай в папку sass/base and sass/utils там є кнопка, і .visually-hidden (він у всіх блоках проекту застосовується), тож тут треба прибрати
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 
 .adv {
   &__list {
