@@ -32,7 +32,6 @@
 }
 
 .section__pretitle {
-  font-family: var(--main-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.22;
@@ -278,7 +277,6 @@
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 20px;
-  font-family: var(--main-font);
   line-height: var(--line-height-auto);
   letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
@@ -298,8 +296,6 @@
 }
 
 .product__description {
-  font-weight: 400;
-  font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.76;
   color: var(--secondary-text-color);

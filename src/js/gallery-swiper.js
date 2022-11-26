@@ -1,10 +1,11 @@
-var swiper = new Swiper('.gallerySwiper', {
+var swiper = new Swiper('.gallery__swiper', {
   autoplay: {
-    delay: 5000,
+    delay: 4000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
+  clickable: true,
   loop: true,
   allowTouchMove: true,
-  clickable: true,
+  grabCursor: true,
 });
