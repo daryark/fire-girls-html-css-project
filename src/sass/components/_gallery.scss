@@ -1,3 +1,37 @@
-.test {
-  outline: 1px solid tomato;
+.gallery {
+  position: relative;
+}
+.gallery__swiper {
+  position: absolute;
+  bottom: -98px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  max-width: calc(100% - 40px);
+  height: auto;
+  background-color: rgb(237, 172, 172);
+
+  @include mob {
+    max-width: 440px;
+  }
+  @include tab {
+    bottom: -183px;
+    max-width: 704px;
+    max-height: 327px;
+  }
+  @include pc {
+    bottom: -324px;
+    max-width: 1013px;
+    max-height: 422px;
+  }
+
+  // C: temporary!!
+  border-radius: 9px;
+
+  @include tab {
+    border-radius: 19px;
+  }
+  @include pc {
+    border-radius: 24px;
+  }
 }
