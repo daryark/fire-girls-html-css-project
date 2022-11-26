@@ -1,5 +1,5 @@
 body {
-  background-color: var(--bg-color);
+  background-color: var(--bg-green-color);
   color: var(--primary-text-color);
 
   cursor: url(../images/cursor.svg);
@@ -9,7 +9,9 @@ body {
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height-auto);
 
-  @include tab{
+  cursor: url(./images/cursor.svg), auto;
+
+  @include tab {
     font-size: 14px;
   }
   @include pc{
