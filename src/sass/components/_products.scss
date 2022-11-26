@@ -1,11 +1,11 @@
 .product__section {
+  margin: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   max-width: 1200px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  cursor: url(../images/cursor.svg), auto;
 
   background-image: url(../images/products/mobile/fonproductsx1-min.jpg);
 
@@ -330,6 +330,11 @@
 
   @include pc {
     padding-bottom: 60px;
+  }
+
+  &:hover,
+  &:focus {
+    border: none;
   }
 }
 .customer-review {
