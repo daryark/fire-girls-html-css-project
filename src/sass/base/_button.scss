@@ -1,13 +1,15 @@
-.btn{
+.btn {
+  display: flex;
+  align-items: center;
+
   border-radius: 10px;
   border-color: transparent;
-  
+
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
 
-
   font-weight: 600;
-  font-size: 12px;
+  font-size: 12px👈❓;
   line-height: var(--line-height-auto);
   text-align: center;
 
@@ -16,8 +18,9 @@
 
   padding: 12px 34px;
   min-width: 114px;
+
   @include tab {
-    font-size: 14px;
+    font-size: 14px👈❓;
     line-height: 1.3;
 
     min-width: 216px;
@@ -25,18 +28,21 @@
   @include pc {
     min-width: 216px;
   }
+
+  &:hover {
+    background-color: var(--button-hover);
+  }
+  &:focus {
+    background-color: var(--button-hover);
+    color: var(--primary-text-color);
+  }
+
+  &__icon {
+    margin-left: 7px;
+  }
 }
 
-.btn:hover {
-  background-color: var(--button-hover);
-}
-
-.btn:focus {
-  background-color: var(--button-hover);
-  color: var(--primary-text-color);
-}
-
-.btn-secondary{
+.btn-secondary {
   border-color: var(--accent-color);
   border-style: solid;
 
@@ -44,13 +50,13 @@
 
   @include transition(background-color);
   @include transition();
-}
 
-.btn-secondary:hover {
-  border-color: var(--button-hover);
-}
+  &:hover {
+    border-color: var(--button-hover);
+  }
 
-.btn-secondary:focus {
-  border-color: var(--button-hover);
-  color: var(--primary-text-color);
+  &:focus {
+    border-color: var(--button-hover);
+    color: var(--primary-text-color);
+  }
 }
