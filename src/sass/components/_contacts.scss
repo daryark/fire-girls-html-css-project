@@ -1,5 +1,30 @@
-.contacts {
-  &__list {
+.contacts{
+    width: 100%;
+    position: relative;    
+    height: 1150px;
+    @include tab{
+      height: 318px;
+    }
+    @include pc{
+      height: 513px;
+    }
+  &__container{
+    position: absolute;
+    top: -350px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 60px;
+
+    @include tab{      
+      top: -300px;
+      padding-bottom: 40px;
+    }
+    @include pc{      
+      top: -130px;
+      padding-bottom: 120px;
+    }
+  }
+  &__list{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,10 +118,10 @@
     }
   }
   &__working-time {
-    margin-top: 24px;
+    padding-top: 24px;
     padding-bottom: 24px;
-    @include tab {
-      margin-top: 32px;
+    @include tab{
+      padding-top: 32px;
       padding-bottom: 32px;
     }
   }
