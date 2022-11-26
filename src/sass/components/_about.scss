@@ -118,8 +118,15 @@
     padding-left: 50px;
     padding-right: 50px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
     @include tab {
       padding: 0;
+      align-items: flex-start;
+      gap: 8px;
       width: 336px;
     }
     @include pc {
@@ -129,24 +136,24 @@
 
   &__text {
     text-align: center;
-    font-size: 12px;
     line-height: --text-line-height;
 
     @include tab {
       text-align: left;
     }
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+    }
   }
 
-  &__text:last-child {
-    margin-top: 4px;
-    margin-bottom: 10px;
+  &__text:last-of-type {
+    margin-bottom: 2px;
 
     @include tab {
-      margin-top: 8px;
-      margin-bottom: 49px;
+      margin-bottom: 41px;
     }
     @include pc {
-      margin-bottom: 54px;
+      margin-bottom: 46px;
     }
   }
 }
