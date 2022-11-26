@@ -4,7 +4,7 @@
 @import './base/reset';
 @import './base/body';
 @import './base/button';
-@import './base/modal-ingredients';
+@import './base/modal-inputs';
 
 @import './utils/visually-hidden';
 @import './utils/container';
@@ -20,3 +20,5 @@
 @import './components/customer-review';
 @import './components/contacts';
 @import './components/footer';
+
+@import './components/modal-ingredients';
