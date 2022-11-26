@@ -2,12 +2,18 @@
   position: relative;
   &__container{
     position: absolute;
+    top: -353px;
+    left: 20px;
     padding-bottom: 60px;
     @include tab{
       padding-bottom: 40px;
+      top: -298px;
+      left: 32px;
     }
     @include pc{
       padding-bottom: 120px;
+      top: -128px;
+      left: 32px;
     }
   }
   &__list{
