@@ -1,121 +1,141 @@
 .about.container {
   margin: 0 auto;
   padding: 60px 20px;
-  
+
+  // Не треба дублювати стилі мраджина 👇, якщо вони не змінюються
+  // Не обов'язково закривати стилі також в max-width, якщо їх наступні стилі переб'ють.
+
+  // Також тоді тобі не треба знов писати стилі, які залишаються на більших екранах (як от  margin: 0 auto;) він продовжить працювати на усіх більших екранах, поки те не запишеш йому інше значення.
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  margin: 0 auto;
-  padding: 60px 32px;
+    margin: 0 auto;
+    padding: 60px 32px;
   }
   @media screen and (min-width: 1200px) {
     margin: 0 auto;
     padding: 60px 16px;
-    }}
+  }
+}
 
 .about {
-&__label {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  
-  @media screen and (min-width: 768px) {
-    font-weight: 800;
+  &__label {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 1.23;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__title {
+    //Варто прописувати запасний шрифт після основного (загальне сімейство шрифтів до якого відноситься твій шрифт (у нас sans-serif)
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
     font-size: 30px;
-    line-height: 1.23;
-    margin-bottom: 12px;}
-}
- 
-&__title {
-  font-family: 'Seymour One';
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.27;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 54px;
+    line-height: 1.27;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 54px;
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  font-size: 34px;
-  line-height: 1.26;
-  margin-bottom: 72px;}
-  
-  @media screen and (min-width: 1200px) {
-  font-size: 36px;
-  line-height: 1.25;
-  letter-spacing: 0.06em;
-  margin-bottom: 82px;}
-}
-&__cow {
-  align-items: center;
-    
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-  display: flex; 
-  justify-content: center;
-  gap: 32px;
-}
-  @media screen and (min-width: 1200px) {
-  justify-content: flex-start;
-  gap: 100px;
-  }}
-  
-&__image {
-    background: linear-gradient(0deg,
-  rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-  border-radius: 50%;
-  box-shadow: 0px 22px 17px -22px rgba(153, 114, 23, 0.25);
-  margin-bottom: 40px;
+    // Тут так само не треба закривати в min-width i в max-width. Першого достатньо, а наступний min-width його переб'є.Далі також перепиши, де необхідно
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 34px;
+      line-height: 1.26;
+      margin-bottom: 72px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.25;
+      letter-spacing: 0.06em;
+      margin-bottom: 82px;
+    }
   }
 
-&__description {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-  width: 336px;
+  // align-items працює тільки з display: flex (та для того, щоб вирівняти їх в колонки також задай напрям flex-direction)
+  &__cow {
+    align-items: center;
+
+    // А тут тоді можна не задавати флекс, а тільки змінити напрям флексу)
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+    }
+    // тут розташування тексту вже змінювати не треба, це на планшеті зроблено
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+      gap: 100px;
+    }
+  }
+
+  &__image {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    border-radius: 50%;
+    box-shadow: 0px 22px 17px -22px rgba(153, 114, 23, 0.25);
+    margin-bottom: 40px;
+  }
+
+  // Задай бокові padding для обгортки тексту, перевизнач (прибери) їх на tablet, адже далі в тебе є gap на самому флекс контейнері і вони добре працюють.
+  &__description {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 336px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 463px;
+    }
+  }
+
+  // Зміни text-align на tablet екрані
+  &__text {
+    line-height: 1.76;
+    text-align: center;
+    font-size: 12px;
+    line-height: 176%;
+  }
+
+  &__text:first-child {
+    margin-bottom: 4px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  // Візьми стилі кнопки з _button.scss, class="btn", прибери тут та заміни назву в html
+  // (клас з іконкою скоро додамо)
+  &__button {
+    margin: 0 auto;
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 164px;
+    height: 42px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    padding: 12px 34px;
+    border: none;
+    @media screen and (min-width: 768px) {
+      margin-top: 48px;
+    }
+  }
 }
-  @media screen and (min-width: 1200px) {
-  width: 463px;
-  }
-  }
-
-&__text {
-  line-height: 1.76;
-  text-align: center;
-  font-size: 12px;
-  line-height: 176%;
-  }
-
-&__text:first-child {
-  margin-bottom: 4px;
-  @media screen and (min-width: 768px) {
-  margin-bottom: 8px;
-}}
-
-&__button {
-  margin: 0 auto;
-  color: var(--secondary-text-color);
-  background-color:var(--accent-color);
-  cursor: pointer;
-  border-radius: 10px;
-  margin-top: 20px;
-  width: 164px;
-  height: 42px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  text-align: center;
-  padding: 12px 34px;
-  border: none;
-  @media screen and (min-width: 768px) {
-  margin-top: 48px;
-}
-}}
-
-
-
-
-
