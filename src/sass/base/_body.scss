@@ -7,8 +7,6 @@ body {
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height-auto);
 
-  cursor: url(./images/cursor.svg), auto;
-
   @include tab {
     font-size: 14px;
   }
