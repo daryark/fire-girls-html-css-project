@@ -1,11 +1,11 @@
 .footer {
   &__container {
-    margin-top: 60px;
+    padding-top: 60px;
     @include tab {
-      margin-top: 40px;
+      padding-top: 40px;
     }
     @include pc {
-      margin-top: 120px;
+      padding-top: 120px;
     }
   }
   &__top {
