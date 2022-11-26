@@ -9,7 +9,7 @@
   }
 
   @include tab {
-    height: 1017px;
+    height: 1034px;
     background-image: url(../images/gallery/tablet/fon2tabx1-min.jpg);
     @include retina {
       background-image: url(../images/gallery/tablet/fon2tabx2-min.jpg);
@@ -109,7 +109,9 @@
 }
 
 .customer-review__name {
+  margin-bottom: 32px;
   text-align: center;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
@@ -127,7 +129,7 @@
 
 .customer-review__swiper > .swiper-pagination {
   position: absolute;
-  bottom: -32px;
+  bottom: 0;
 
   display: flex;
   justify-content: center;
