@@ -1,3 +1,69 @@
-.test {
-  border: 1px solid tomato;
+.adv {
+  padding-bottom: 64px;
+  @include tab {
+    padding-bottom: 204px;
+  }
+  @include pc {
+    padding-bottom: 178px;
+  }
+}
+
+.adv {
+  &__list {
+    padding: 0px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+
+    @include tab {
+      padding: 0px 44px;
+      flex-direction: row;
+      gap: 80px;
+    }
+    @include pc {
+      padding: 0;
+      gap: 32px;
+    }
+  }
+
+  &__card {
+    text-align: center;
+
+    @include pc {
+      width: 368px;
+    }
+  }
+
+  &__wrap {
+    margin: 0 auto;
+    @include flex();
+
+    width: 50px;
+    height: 50px;
+
+    color: var(--secondary-text-color);
+    background-color: var(--accent-color);
+    border-radius: 50%;
+  }
+
+  &__number {
+    margin: 16px 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: var(--text-line-height);
+    text-transform: uppercase;
+
+    @include tab {
+      font-size: 48px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      text-transform: none;
+    }
+    @include pc {
+      font-size: 58px;
+      margin-top: 40px;
+    }
+  }
 }
