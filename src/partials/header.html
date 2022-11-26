@@ -4,12 +4,37 @@
 <body>
   <header class="header section">
     <div class="container header__main-nav">
-      <a class="header__logo" href="#"
-        ><svg class="header__logo-icon" width="100%" height="100%">
-          <use
-            href="../images/symbol-defs.svg#icon-icon-ice-cream-desc"
-          ></use></svg
-      ></a>
+      <a class="header__logo" href="#">
+        <picture>
+          <source
+            srcset="
+              ../images/hero/desktop/logodeskx1-min.png 1x,
+              ../images/hero/desktop/logodeskx2-min.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ../images/hero/tablet/logotabx1-min.png 1x,
+              ../images/hero/tablet/logotabx2-min.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../images/hero/mobile/logomobx1-min.png 1x,
+              ../images/hero/mobile/logomobx2-min.png
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="../images/hero/mobile/logomobx1-min.png"
+            width="40"
+            height="37"
+            alt="logo"
+          />
+        </picture>
+      </a>
       <nav>
         <ul class="header__navigation">
           <li class="header__navigation-item">
@@ -34,7 +59,7 @@
         aria-controls="mobile-menu"
       >
         <svg class="menu-toggle__button-icon">
-          <use href="../images/symbol-defs.svg#icon-icon-cow-desc"></use>
+          <use href="../images/symbol-defs.svg#icon-arrow-desc"></use>
         </svg>
       </button>
       <div class="mobile__menu-container js-menu-container" id="mobile-menu">
@@ -55,23 +80,96 @@
           <li><a href="#" class="mobile_menu-link">Our products</a></li>
           <li><a href="#" class="mobile_menu-link">Contact</a></li>
         </ul>
-        <div class="mobile_menu-button-wrapper">
-          <button class="mobile_menu-button btn" type="button">
-            Buy now
-            <svg class="mob-menu-button__icon" width="12" height="12">
-              <use href=""></use>
-            </svg>
-          </button>
-        </div>
+
+        <button class="mobile_menu-button btn" type="button">
+          Buy now
+          <svg class="mob-menu-button__icon" width="12" height="12">
+            <use href=""></use>
+          </svg>
+        </button>
       </div>
 
       <button class="header__button btn" type="button">
         Buy now
         <svg class="header-button__icon" width="9" height="15">
-          <use href=""></use>
+          <use href="./images/icons.svg#icon-icon-cow-desc"></use>
         </svg>
       </button>
     </div>
   </header>
+  <div class="container hero__container">
+    <div class="hero__wrap">
+      <h1 class="hero__title">ice cream made with passion</h1>
+      <div class="hero__stat">
+        <span class="hero__number">16</span>
+        <span class="hero__number-text">cafes</span>
+        <span class="hero__number">23</span>
+        <span class="hero__number-text">food trucks</span>
+      </div>
+    </div>
+    <div class="hero__buttons">
+      <div class="hero__button btn-secondary">
+        <a class="hero__button-link" href="#">Products</a>
+      </div>
+      <a href="#" class="hero__link">How it’s made?</a>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ../images/hero/desktop/smallicecreamdescx1-min.png 1x,
+          ../images/hero/desktop/smallicecreamdescx2-min.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ../images/hero/tablet/smallicecreamtabx1-min.png 1x,
+          ../images/hero/tablet/smallicecreamtabx2-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="tablet-plate"
+        src="../images/hero/tablet/smallicecreamtabx1-min.png"
+        alt="tablet-plate"
+      />
+    </picture>
+    <div class="hero__wrapper">
+      <span class="hero__text"
+        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et</span
+      >
+      <svg class="hero__icon" width="40" height="16">
+        <use href="../images/symbol-defs.svg#icon-arrow-desc"></use>
+      </svg>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ../images/hero/desktop/bigicecreamdescx1.png 1x,
+          ../images/hero/desktop/bigicecreamdescx2.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="../images/hero/tablet/Фото морозиво таблеткаbigicecreamtabx1.png 1x, ../images/hero/tablet/Фото морозиво таблеткаbigicecreamtabx2.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ../images/hero/mobile/bigicecreammobx1.png 1x,
+          ../images/hero/mobile/bigicecreammobx2.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero__img"
+        src="../images/hero/mobile/bigicecreammobx1.png"
+        alt="mobile-hero"
+      />
+    </picture>
+  </div>
+
   <script defer src="../js/menu.js"></script>
+  <script defer src="../js/modal.js"></script>
 </body>
