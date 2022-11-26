@@ -7,10 +7,13 @@
   left: 50%;
   transform: translateX(-50%);
 
-  max-width: 280px;
-  max-height: 130px;
+  max-width: calc(100% - 40px);
+  height: auto;
   background-color: rgb(237, 172, 172);
 
+  @include mob {
+    max-width: 440px;
+  }
   @include tab {
     bottom: -183px;
     max-width: 704px;

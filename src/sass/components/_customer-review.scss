@@ -34,6 +34,7 @@
   position: relative;
   padding-top: 178px;
   display: block;
+  overflow: hidden;
 
   @include tab {
     padding-top: 283px;
@@ -58,7 +59,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
 }
 
 .customer__photo {
@@ -66,13 +66,21 @@
 }
 
 .customer-review__content-wrap {
-  flex-grow: 1;
-  // display: flex;
-  background-color: var(--bg-green-color);
-  border-radius: 10px;
-  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+  margin-bottom: 32px;
+  height: 256px;
+
+  background-color: #84a178;
+  border-radius: 10px;
+
+  @include mob {
+    height: 193px;
+  }
   @include tab {
+    height: 138px;
     border-radius: 24px;
   }
   @include pc {

@@ -1,6 +1,6 @@
 var swiper = new Swiper('.customer-review__swiper', {
   autoplay: {
-    delay: 4000,
+    delay: 5000,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
@@ -14,4 +14,5 @@ var swiper = new Swiper('.customer-review__swiper', {
   loop: true,
   allowTouchMove: true,
   clickable: true,
+  spaceBetween: 10,
 });
