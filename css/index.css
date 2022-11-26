@@ -235,6 +235,23 @@ input[type=radio].visually-hidden {
   outline: 1px solid tomato;
 }
 
+.contacts {
+  position: relative;
+}
+.contacts__container {
+  position: absolute;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__container {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__container {
+    padding-bottom: 120px;
+  }
+}
 .contacts__list {
   display: flex;
   justify-content: center;
@@ -346,12 +363,12 @@ input[type=radio].visually-hidden {
   }
 }
 .contacts__working-time {
-  margin-top: 24px;
+  padding-top: 24px;
   padding-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
   .contacts__working-time {
-    margin-top: 32px;
+    padding-top: 32px;
     padding-bottom: 32px;
   }
 }
