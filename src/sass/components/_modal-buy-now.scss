@@ -66,6 +66,12 @@
     }
     
     &__title {
+        font-size: 16px;
+        line-height: 1.5;
+        @include tab{
+            font-size: 20px;
+            line-height: 1.4;
+        }
     }
     &__item--yellow {
         box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
@@ -116,5 +122,11 @@
     &__form{
         display: flex;
         flex-direction: column;
+    }
+    &__input{
+        height: 32px;
+    }
+    &__comment{
+        height: 65px;
     }
 }
