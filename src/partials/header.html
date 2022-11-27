@@ -1,39 +1,11 @@
-<head>
-  <link rel="stylesheet" href="../sass/index.css" />
-</head>
-<body>
+
   <header class="header section">
     <div class="container header__main-nav">
       <a class="header__logo" href="#">
-        <picture>
-          <source
-            srcset="
-              ../images/hero/desktop/logodeskx1-min.png 1x,
-              ../images/hero/desktop/logodeskx2-min.png 2x
-            "
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="
-              ../images/hero/tablet/logotabx1-min.png 1x,
-              ../images/hero/tablet/logotabx2-min.png 2x
-            "
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="
-              ../images/hero/mobile/logomobx1-min.png 1x,
-              ../images/hero/mobile/logomobx2-min.png
-            "
-            media="(max-width: 767px)"
-          />
-          <img
-            src="../images/hero/mobile/logomobx1-min.png"
-            width="40"
-            height="37"
-            alt="logo"
-          />
-        </picture>
+        <svg width="85" height="60">
+          <use href="./images/symbol-defs.svg#icon-logo-ice-cream"></use>
+        </svg>
+        
       </a>
       <nav>
         <ul class="header__navigation">
@@ -47,7 +19,7 @@
             <a class="header__navigation-item-link" href="#">Our products</a>
           </li>
           <li class="header__navigation-item">
-            <a class="header__navigation-item-link" href="">Contact</a>
+            <a class="header__navigation-item-link" href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -59,19 +31,20 @@
         aria-controls="mobile-menu"
       >
         <svg class="menu-toggle__button-icon">
-          <use href="../images/symbol-defs.svg#icon-arrow-desc"></use>
+          <use href="./images/symbol-defs.svg#icon-arrow-desc"></use>
         </svg>
       </button>
       <div class="mobile__menu-container js-menu-container" id="mobile-menu">
         <a class="mobile-menu__logo" href="#"
-          ><svg class="header__logo-icon" width="100%" height="100%">
+          ><svg class="header__logo-icon" width="100" height="100">
             <use
-              href="../images/symbol-defs.svg#icon-icon-ice-cream-desc"
-            ></use></svg
-        ></a>
+              href="./images/symbol-defs.svg#icon-icon-ice-cream-desc"
+            ></use>
+          </svg>
+        </a>
         <button class="menu-toggle js-close-menu">
           <svg class="mobile__menu-close-btn" width="19" height="19">
-            <use href="./images/icons.svg#icon-x"></use>
+            <use href="./images/symbol-defs.svg#icon-x"></use>
           </svg>
         </button>
         <ul class="mobile__menu">
@@ -84,7 +57,7 @@
         <button class="mobile_menu-button btn" type="button">
           Buy now
           <svg class="mob-menu-button__icon" width="12" height="12">
-            <use href=""></use>
+            <use href="#"></use>
           </svg>
         </button>
       </div>
@@ -92,7 +65,7 @@
       <button class="header__button btn" type="button">
         Buy now
         <svg class="header-button__icon" width="9" height="15">
-          <use href="./images/icons.svg#icon-icon-cow-desc"></use>
+          <use href="./images/symbol-defs.svg#icon-icon-cow-desc"></use>
         </svg>
       </button>
     </div>
@@ -116,21 +89,21 @@
     <picture>
       <source
         srcset="
-          ../images/hero/desktop/smallicecreamdescx1-min.png 1x,
-          ../images/hero/desktop/smallicecreamdescx2-min.png 2x
+          ./images/hero/desktop/smallicecreamdescx1-min.png 1x,
+          ./images/hero/desktop/smallicecreamdescx2-min.png 2x
         "
         media="(min-width: 1200px)"
       />
       <source
         srcset="
-          ../images/hero/tablet/smallicecreamtabx1-min.png 1x,
-          ../images/hero/tablet/smallicecreamtabx2-min.png 2x
+          ./images/hero/tablet/smallicecreamtabx1-min.png 1x,
+          ./images/hero/tablet/smallicecreamtabx2-min.png 2x
         "
         media="(min-width: 768px)"
       />
       <img
         class="tablet-plate"
-        src="../images/hero/tablet/smallicecreamtabx1-min.png"
+        src="./images/hero/tablet/smallicecreamtabx1-min.png"
         alt="tablet-plate"
       />
     </picture>
@@ -140,39 +113,37 @@
         tempor incididunt ut labore et</span
       >
       <svg class="hero__icon" width="40" height="16">
-        <use href="../images/symbol-defs.svg#icon-arrow-desc"></use>
+        <use href="./images/symbol-defs.svg#icon-arrow-desc"></use>
       </svg>
     </div>
     <picture>
       <source
         srcset="
-          ../images/hero/desktop/bigicecreamdescx1.png 1x,
-          ../images/hero/desktop/bigicecreamdescx2.png 2x
+          ./images/hero/desktop/bigicecreamdescx1.png 1x,
+          ./images/hero/desktop/bigicecreamdescx2.png 2x
         "
         media="(min-width: 1200px)"
       />
       <source
         srcset="
-          ../images/hero/tablet/bigicecreamtabx1.png 1x,
-          ../images/hero/tablet/bigicecreamtabx2.png 2x
+          ./images/hero/tablet/bigicecreamtabx1.png 1x,
+          ./images/hero/tablet/bigicecreamtabx2.png 2x
         "
         media="(min-width: 768px)"
       />
       <source
         srcset="
-          ../images/hero/mobile/bigicecreammobx1.png 1x,
-          ../images/hero/mobile/bigicecreammobx2.png 2x
+          ./images/hero/mobile/bigicecreammobx1.png 1x,
+          ./images/hero/mobile/bigicecreammobx2.png 2x
         "
         media="(max-width: 767px)"
       />
       <img
         class="hero__img"
-        src="../images/hero/mobile/bigicecreammobx1.png"
+        src="./images/hero/mobile/bigicecreammobx1.png"
         alt="mobile-hero"
       />
     </picture>
   </div>
 
-  <script defer src="../js/menu.js"></script>
-  <script defer src="../js/modal.js"></script>
-</body>
+</header>
