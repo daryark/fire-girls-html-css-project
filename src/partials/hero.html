@@ -1,7 +1,7 @@
 <section class="hero">
   <div class="container">
     <!-- fix this wrap! -->
-    <div class="hero__left-wrap">
+    <div class="hero__up-wrapper">
       <h1 class="hero__title">
         ice cream made with <span class="hero__max-title">passion</span>
       </h1>
@@ -16,6 +16,44 @@
       <button class="hero__btn btn btn-secondary">Products</button>
       <a href="#" class="hero__link">How it’s made?</a>
     </div>
+    <div class="hero__bottom-wrapper">
+      <span class="hero__text"
+        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et</span
+      >
+      <svg class="hero__icon" width="41" height="16">
+        <use href="./images/symbol-defs.svg#icon-arrow-desc"></use>
+      </svg>
+    </div>
+    <!-- Dots img -->
+    <picture>
+      <source
+        srcset="
+          ./images/hero/desktop/pointsdescx1-min.png 1x,
+          ./images/hero/desktop/pointsdescx2-min.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/tablet/pointstabx1-min.png 1x,
+          ./images/hero/tablet/pointstabx2-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/mobile/pointsmobx1-min.png 1x,
+          ./images/hero/mobile/pointsmobx2-min.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero__dots-img"
+        src="./images/hero/desktop/pointsdescx1-min.png"
+        alt="dots"
+      />
+    </picture>
     <!-- Plate with icecream -->
     <picture>
       <source
@@ -36,35 +74,6 @@
         class="tablet-plate"
         src="./images/hero/tablet/smallicecreamtabx1-min.png"
         alt="tablet-plate"
-      />
-    </picture>
-    <div class="hero__wrapper">
-      <span class="hero__text"
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et</span
-      >
-      <svg class="hero__icon" width="32" height="32">
-        <use href="./images/symbol-defs.svg#icon-arrow-desc"></use>
-      </svg>
-    </div>
-    <!-- Shadow -->
-    <picture>
-      <source
-        srcset="./images/hero/desktop/ice-cream-shadow-min.png 1x"
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="./images/hero/tablet/ice-cream-shadow-min.png 1x"
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="./images/hero/mobile/ice-cream-shadow-min.png 1x"
-        media="(max-width: 767px)"
-      />
-      <img
-        class="hero__shadow"
-        src="./images/hero/desktop/ice-cream-shadow-min.png"
-        alt="ice-cream-shadow"
       />
     </picture>
     <!-- Big icecream -->
@@ -91,7 +100,7 @@
         media="(max-width: 767px)"
       />
       <img
-        class="hero__img"
+        class="hero__ice-cream"
         src="./images/hero/mobile/bigicecreammobx1.png"
         alt="mobile-hero"
       />

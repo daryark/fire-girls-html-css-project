@@ -2,44 +2,76 @@
   outline: 3px solid tomato;
   outline-offset: -3px;
 
+  position: relative;
   padding-top: 99px;
-  height: 502px;
+  padding-bottom: 236px;
+
+  max-width: 480px;
+  margin: 0 auto;
+
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 0 458px;
+  background-size: contain;
+
+  // background-image: url(../images/hero/mobile/pointsmobx1-min.png);
+  // @include retina {
+  //   background-image: url(../images/hero/mobile/pointsmobx2-min.png);
+  // }
 
   @include tab {
-    height: 415px;
+    padding-top: 80px;
+    padding-bottom: 24px;
+    max-width: 768px;
+
+    // background-image: url(../images/hero/tablet/pointstabx1-min.png);
+    // @include retina {
+    //   background-image: url(../images/hero/tablet/pointstabx2-min.png);
+    // }
   }
   @include pc {
-    height: 664px;
+    padding-top: 118px;
+    padding-bottom: 103px;
+    min-width: 1200px;
+
+    // background-image: url(../images/hero//desktop/pointsdescx1-min.png);
+    // @include retina {
+    //   background-image: url(../images/hero/desktop/pointsdescx2-min.png);
+    // }
   }
 }
 
 .hero__title {
+  width: 247px;
+
   font-family: var(--secondary-font);
   font-size: 26px;
   line-height: calc(33 / 26);
   text-transform: uppercase;
-  width: 247px;
+
+  @include pc {
+    width: 367px;
+    font-size: 38px;
+  }
 }
 .hero__max-title {
-  font-size: 34px;
+  @include no-pc {
+    font-size: 34px;
+    line-height: 0.96;
+  }
 }
-
-.hero__left-wrap {
-  @media screen and (min-width: 768px) {
+.hero__up-wrapper {
+  @include tab {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 16px;
-
-    @media screen and (min-width: 1200px) {
-      padding-top: 56px;
-    }
   }
 }
 .hero__stat {
   display: none;
 
   @media screen and (min-width: 768px) {
+    margin-top: 14px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -48,12 +80,11 @@
 .hero__number {
   font-weight: 900;
   font-size: 28px;
-  line-height: 1.21;
-  letter-spacing: 0.04em;
+  line-height: var(--line-height-auto);
   text-transform: uppercase;
   color: var(--secondary-text-color);
 
-  @media screen and (min-width: 1200px) {
+  @include pc {
     font-size: 46px;
   }
 }
@@ -70,12 +101,16 @@
   align-items: center;
   gap: 12px;
 
-  @media screen and (min-width: 1200px) {
+  @include tab {
+    margin-top: 24px;
+  }
+
+  @include pc {
     margin-top: 28px;
   }
 }
 .hero__btn {
-  @media screen and(max-width: 1199px) {
+  @include no-pc {
     padding: 11px 26px;
     font-size: 12px;
     border-radius: 8px;
@@ -100,95 +135,78 @@
     color: var(--button-hover);
   }
   &:focus {
-    color: var(--button-hover);
+    color: var(--primary-text-color);
   }
 }
 
-.tablet-plate {
+.hero__bottom-wrapper {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: block;
-    position: absolute;
-    margin-top: 28px;
-    left: 102px;
-    transform: translateX(-50%);
+    margin-top: 39px;
+    padding-left: 184px;
   }
 
-  @media screen and (min-width: 1200px) {
-    margin-top: 42px;
-    left: 128px;
-  }
-}
-
-.hero__wrapper {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-    margin-top: 46px;
-    padding-left: calc(184px - 32px);
-    fill: var(--primary-text-color);
-    padding-bottom: 24px;
-  }
-
-  @media screen and (min-width: 1200px) {
+  @include pc {
     margin-top: 120px;
     padding-left: 241px;
   }
 }
 
 .hero__text {
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: block;
-    font-weight: 400;
-    font-size: 12px;
     width: 151px;
+
+    font-size: 12px;
     line-height: 1.41;
+  }
+  @include pc {
+    font-size: 14px;
   }
 }
 
 .hero__icon {
-  @media screen and (min-width: 768px) {
-    fill: inherit;
+  @include tab {
     margin-top: 12px;
+  }
+  @include pc {
+    margin-top: 24px;
   }
 }
 
-.hero__img {
+.hero__ice-cream {
   position: absolute;
   bottom: 0;
   right: 64px;
 
-  @media screen and (min-width: 768px) {
-    left: 72%;
-    bottom: -52px;
-  }
+  filter: drop-shadow(4px -4px 39px #fff);
 
-  @media screen and (min-width: 1200px) {
-    left: 72%;
-    width: 456px;
-    height: 560px;
-    bottom: -78px;
-    filter: drop-shadow(4px -4px 39px #fff);
+  @include tab {
+    bottom: 0;
+    right: 90px;
+  }
+  @include pc {
+    bottom: 0;
+    right: 93px;
   }
 }
+.tablet-plate {
+  display: none;
 
-.hero__shadow {
+  @include tab {
+    display: block;
+    position: absolute;
+
+    bottom: 12px;
+  }
+  @include pc {
+    bottom: 12px;
+  }
+}
+.hero__dots-img {
   position: absolute;
   bottom: 0;
-  right: 52px;
-
-  @media screen and (min-width: 768px) {
-    left: 72%;
-    bottom: -52px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    left: 72%;
-    width: 456px;
-    height: 560px;
-    bottom: -78px;
-    filter: drop-shadow(4px -4px 39px #fff);
-  }
+  right: 0;
 }
