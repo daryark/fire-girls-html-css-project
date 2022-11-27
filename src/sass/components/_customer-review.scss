@@ -9,7 +9,7 @@
   }
 
   @include tab {
-    height: 1017px;
+    height: 1034px;
     background-image: url(../images/gallery/tablet/fon2tabx1-min.jpg);
     @include retina {
       background-image: url(../images/gallery/tablet/fon2tabx2-min.jpg);
@@ -30,15 +30,118 @@
     }
   }
 }
+.customer-review__swiper {
+  position: relative;
+  padding-top: 178px;
+  display: block;
+  overflow: hidden;
+
+  @include tab {
+    padding-top: 283px;
+  }
+  @include pc {
+    padding-top: 464px;
+  }
+}
+
+.customer-review__list {
+  height: 466px;
+
+  @include tab {
+    height: 255px;
+  }
+  @include pc {
+    height: 361px;
+  }
+}
+
+.customer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customer__photo {
+  margin-bottom: 32px;
+}
+
+.customer-review__content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-bottom: 32px;
+  height: 256px;
+
+  background-color: #84a178;
+  border-radius: 10px;
+
+  @include mob {
+    height: 193px;
+  }
+  @include tab {
+    height: 138px;
+    border-radius: 24px;
+  }
+  @include pc {
+    width: 968px;
+  }
+}
+
+.customer-review__content {
+  text-align: center;
+  padding: 35px 39px;
+  margin: auto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+
+  @include tab {
+    padding: 28px 80px;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @include pc {
+    padding: 43px 109px;
+    font-size: 16px;
+  }
+}
 
 .customer-review__name {
+  margin-bottom: 32px;
   text-align: center;
 
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
+  color: var(--secondary-text-color);
 
   @include tab {
     font-size: 16px;
   }
+
+  @include pc {
+    font-size: 16px;
+    line-height: 1.85;
+  }
+}
+
+.customer-review__swiper > .swiper-pagination {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #d9d9d9;
+}
+
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background: #84a178;
 }
