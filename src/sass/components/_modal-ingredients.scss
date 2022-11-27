@@ -1,3 +1,224 @@
-.test {
-  outline: 1px solid tomato;
+.modal__title {
+  margin-bottom: 181px;
+  text-align: center;
+
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+
+  color: var(--secondary-text-color);
+  @include pc {
+    margin-bottom: 187px;
+  }
+}
+
+.ingridients__list {
+  margin-bottom: 40px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  @include mob {
+    @include grid(9px);
+  }
+
+  @include pc {
+    @include grid(20px);
+    margin-bottom: 48px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -154px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 132px;
+    height: 131px;
+
+    border-radius: 132px;
+  }
+
+  &--green::before {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  }
+
+  // .ingridients__list--yellow::before {
+  //   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  // }
+
+  // .ingridients__list--orange::before {
+  //   box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  // }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -161px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 130px;
+    height: 131px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 131px;
+  }
+
+  &--green::after {
+    background-image: url(../images/modal-icecream-info/mobile/ingridientmobx1-min.png);
+
+    @include retina {
+      background-image: url(../images/modal-icecream-info/mobile/ingridientmobx2-min.png);
+    }
+
+    @include pc {
+      background-image: url(../images/modal-icecream-info/desktop/modalingridientdescx1-min.jpg);
+
+      @include retina {
+        background-image: url(../images/modal-icecream-info/desktop/modalingridientdescx2-min.jpg);
+      }
+    }
+  }
+  // .product__item--yellow::after {
+  //   // mobile screen
+  //   background-image: url(../images/products/mobile/productsmobpic2x1-min.png);
+
+  //   @include retina {
+  //     background-image: url(../images/products/mobile/productsmobpic2x2-min.png);
+  //   }
+
+  //   // tablet screen
+  //   @include tab {
+  //     background-image: url(../images/products/tablet/productstabpic2x1-min.png);
+
+  //     @include retina {
+  //       background-image: url(../images/products/tablet/productstabpic2x2-min.png);
+  //     }
+  //   }
+}
+
+.ingridients__item {
+  width: 53px;
+  min-height: 72px;
+
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+
+  @include pc {
+    width: 65px;
+    min-height: 90px;
+  }
+}
+
+.card__number {
+  margin: auto;
+  @include flex();
+
+  width: 43px;
+  min-height: 43px;
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.25;
+
+  color: var(--secondary-text-color);
+  background: #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+
+  border: 2px solid #9cbe8f;
+  border-radius: 53px;
+
+  @include pc {
+    width: 53px;
+    min-height: 53px;
+    font-size: 12px;
+    line-height: 1.23;
+  }
+}
+
+.card__text {
+  margin: auto;
+  text-align: center;
+
+  font-weight: 400;
+  font-size: 10px;
+  color: var(--secondary-text-color);
+
+  @include pc {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+
+.composition__title {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  color: var(--secondary-text-color);
+}
+
+.composition__list {
+  margin-bottom: 40px;
+
+  @include pc {
+    margin-bottom: 48px;
+  }
+}
+
+.composition__item {
+  margin-bottom: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  @include mob {
+    @include grid(9px);
+  }
+
+  @include pc {
+    @include grid(20px);
+  }
+}
+
+.composition__text,
+.composition__weight {
+  @include flex();
+
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--secondary-text-color);
+}
+
+.modal-form {
+  margin: auto;
+  max-width: 368px;
+}
+
+.modal-list {
+  margin-bottom: 24px;
+
+  @include pc {
+    margin-bottom: 32px;
+  }
+}
+
+.modal__btn {
+  margin: auto;
 }
