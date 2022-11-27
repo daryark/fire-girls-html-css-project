@@ -55,6 +55,10 @@
     background-color: var(--primary-text-color);
     border-radius: 24px;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+    @include transition(transform);
+    @include transition(box-shadow);
+
     @include mob {
       flex-basis: 450px;
     }
@@ -68,6 +72,12 @@
       flex-basis: calc((100% - 2 * 32px) / 3);
       padding-right: 40px;
       padding-left: 40px;
+    }
+    &:hover{
+      transform: scale(1);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
     }
   }
   &__title {
