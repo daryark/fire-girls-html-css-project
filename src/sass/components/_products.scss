@@ -1,7 +1,8 @@
 .product__section {
-  height: 1936px;
+  margin: auto;
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1200px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -13,7 +14,6 @@
   }
 
   @include tab {
-    height: 830px;
     background-image: url(../images/products/tablet/fon1tabx1-min.jpg);
 
     @include retina {
@@ -22,21 +22,10 @@
   }
 
   @include pc {
-    height: 1053px;
     background-image: url(../images/products/desktop/fon1descx1-min.jpg);
 
     @include retina {
       background-image: url(../images/products/desktop/fon1descx2-min.jpg);
-    }
-  }
-
-  @media screen and(min-width: 1920px) {
-    background-image: url(../images/gallery/big-desctop/fon1920block4x1-min.jpg);
-
-    @include retina {
-      @include retina {
-        background-image: url(../images/gallery/big-desctop/fon1920block4x2-min.jpg);
-      }
     }
   }
 }
@@ -312,18 +301,19 @@
   padding-left: 40px;
   padding-right: 40px;
   flex-grow: 1;
-  margin-bottom: 45px;
+  margin-bottom: 53px;
 
   @include tab {
     padding-left: 26px;
     padding-right: 26px;
-    margin-bottom: 42px;
+    margin-bottom: 50px;
   }
 
   @include pc {
     font-size: 16px;
     padding-left: 64px;
     padding-right: 64px;
+    margin-bottom: 50px;
   }
 }
 
@@ -332,23 +322,21 @@
   border: none;
   display: block;
   margin: auto;
-  padding-bottom: 8px;
+  padding-bottom: 16px;
 
   @include tab {
-    padding-bottom: 4px;
+    padding-bottom: 12px;
   }
 
   @include pc {
-    padding-bottom: 52px;
+    padding-bottom: 60px;
   }
 
   &:hover,
   &:focus {
-    cursor: pointer;
+    border: none;
   }
-  border: none;
 }
-
 .customer-review {
   color: var(--secondary-text-color);
 }

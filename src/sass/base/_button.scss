@@ -19,6 +19,7 @@
     background-color: var(--button-hover);
     transform: translateY(-5px);
     box-shadow: 0 5px 0 #087313;
+
   }
   &:focus {
     background-color: var(--button-hover);
@@ -44,12 +45,10 @@
   @include transition();
 
   &:hover {
-    background-color: transparent;
     border-color: var(--button-hover);
   }
 
   &:focus {
-    background-color: transparent;
     border-color: var(--button-hover);
     color: var(--primary-text-color);
   }
