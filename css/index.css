@@ -1476,10 +1476,14 @@ input[type=radio].visually-hidden {
 }
 .loc-modal__img-map {
   margin-bottom: 24px;
+  width: 224px;
+  height: 199px;
 }
 @media screen and (min-width: 768px) {
   .loc-modal__img-map {
     margin-bottom: 32px;
+    width: 448px;
+    height: 260px;
   }
 }
 
@@ -1940,10 +1944,14 @@ input[type=radio].visually-hidden {
 }
 .loc-modal__img-map {
   margin-bottom: 24px;
+  width: 224px;
+  height: 199px;
 }
 @media screen and (min-width: 768px) {
   .loc-modal__img-map {
     margin-bottom: 32px;
+    width: 448px;
+    height: 260px;
   }
 }
 
