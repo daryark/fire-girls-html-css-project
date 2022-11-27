@@ -11,16 +11,24 @@
   color: var(--secondary-text-color);
   border-radius: 10px;
   border-color: transparent;
+  outline: none;
 
   @include transition(background-color);
   @include transition();
-
+  @include transition(box-shadow);
   &:hover {
     background-color: var(--button-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 7px 0 #0a8817;//make it darker!!!
+
   }
   &:focus {
     background-color: var(--button-hover);
     color: var(--primary-text-color);
+  }
+  &:active {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 0 #0a8817;//make it darker!!!
   }
 
   &__icon {
