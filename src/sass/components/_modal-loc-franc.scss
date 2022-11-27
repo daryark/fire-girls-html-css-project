@@ -101,13 +101,22 @@
     @include tab {
         height: 668px;
     }
+    &__title{
+        width: 221px;
+        @include tab{
+            width: 322px;
+        }
+    }
     &__text{
         font-weight: 400;
         font-size: 14px;
         line-height: 1.4;
         color: var(--secondary-text-color);
+        text-align: justify;
+        width: 222px;
         @include tab{
             font-size: 16px;
+            width: 448px;
         }
     }
     &__field{
