@@ -2133,7 +2133,7 @@ input[type=radio].visually-hidden {
 }
 @media screen and (min-width: 768px) {
   .buy-now__item--yellow::after {
-    background-image: url(../images/modal-buy-now/tablet/modalbuynowpic2tab1-min.png);
+    background-image: url(../images/modal-buy-now/tablet/modalbuynowpic2tabx1-min.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -2143,12 +2143,12 @@ input[type=radio].visually-hidden {
 }
 @media screen and (min-width: 1200px) {
   .buy-now__item--yellow::after {
-    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2descx1-min.png);
+    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2deskx1-min.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .buy-now__item--yellow::after {
-    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2descx2-min.png);
+    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2deskx2-min.png);
   }
 }
 .buy-now__item--orange {
@@ -2164,7 +2164,7 @@ input[type=radio].visually-hidden {
 }
 @media screen and (min-width: 768px) {
   .buy-now__item--orange::after {
-    background-image: url(../images/modal-buy-now/tablet/modalbuynowpic3tab1-min.png);
+    background-image: url(../images/modal-buy-now/tablet/modalbuynowpic3tabx1-min.png);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -2174,12 +2174,12 @@ input[type=radio].visually-hidden {
 }
 @media screen and (min-width: 1200px) {
   .buy-now__item--orange::after {
-    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3descx1-min.png);
+    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3deskx1-min.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .buy-now__item--orange::after {
-    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3descx2-min.png);
+    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3deskx2-min.png);
   }
 }
 .buy-now__form {

@@ -76,15 +76,15 @@
                 background-image: url(../images/modal-buy-now/mobile/modalbuynowmobpic2x2-min.png);
             }
             @include tab{
-                background-image: url(../images/modal-buy-now/tablet/modalbuynowpic2tab1-min.png);
+                background-image: url(../images/modal-buy-now/tablet/modalbuynowpic2tabx1-min.png);
                 @include retina{
                     background-image: url(../images/modal-buy-now/tablet/modalbuynowpic2tabx2-min.png);
                 }
             }
             @include pc{
-                background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2descx1-min.png);
+                background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2deskx1-min.png);
                 @include retina{
-                    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2descx2-min.png);
+                    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2deskx2-min.png);
                 }
             }
         }
@@ -99,15 +99,15 @@
                 background-image: url(../images/modal-buy-now/mobile/modalbuynowmobpic3x2-min.png);
             }
             @include tab{
-                background-image: url(../images/modal-buy-now/tablet/modalbuynowpic3tab1-min.png);
+                background-image: url(../images/modal-buy-now/tablet/modalbuynowpic3tabx1-min.png);
                 @include retina{
                     background-image: url(../images/modal-buy-now/tablet/modalbuynowpic3tabx2-min.png);
                 }
             }
             @include pc{
-                background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3descx1-min.png);
+                background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3deskx1-min.png);
                 @include retina{
-                    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3descx2-min.png);
+                    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3deskx2-min.png);
                 }
             }
         }
