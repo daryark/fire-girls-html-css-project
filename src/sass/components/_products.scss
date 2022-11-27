@@ -32,15 +32,14 @@
 
   @media screen and(min-width: 1920px) {
     background-image: url(../images/gallery/big-desctop/fon1920block4x1-min.jpg);
-    
-          @include retina {
-          @include retina {
-      background-image: url(../images/gallery/big-desctop/fon1920block4x2-min.jpg);
+
+    @include retina {
+      @include retina {
+        background-image: url(../images/gallery/big-desctop/fon1920block4x2-min.jpg);
+      }
     }
   }
 }
-}
-
 
 .section__pretitle {
   font-weight: 800;
@@ -253,7 +252,6 @@
       background-image: url(../images/products/desktop/productsdescpic3x2-min.png);
     }
   }
-  
 }
 
 .product__text {
@@ -349,4 +347,9 @@
   &:focus {
     cursor: pointer;
   }
+  border: none;
+}
+
+.customer-review {
+  color: var(--secondary-text-color);
 }

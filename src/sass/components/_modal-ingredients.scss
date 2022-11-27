@@ -35,7 +35,8 @@
   background: var(--primary-text-color);
   border: 2px solid var(--accent-color);
   border-radius: 10px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   padding: 28px 20px;
 
@@ -102,7 +103,7 @@
   text-align: center;
 
   @include pc {
-  margin-bottom: 187px;
+    margin-bottom: 187px;
   }
 }
 
@@ -126,7 +127,12 @@
   }
 }
 .ingridients__list--green::before {
-  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
 }
 
@@ -151,14 +157,13 @@
   background-repeat: no-repeat;
   border-radius: 131px;
 
-
   @include pc {
     top: -162px;
     left: 50%;
     transform: translateX(-50%);
     width: 131px;
     height: 131px;
-   }
+  }
 }
 
 .ingridients__list--green::after {
@@ -173,8 +178,8 @@
 
     @include retina {
       background-image: url(../images/modal-icecream-info/desktop/modalingridientdescx2-min.jpg);
+    }
   }
-}
 }
 // .product__item--yellow::after {
 //   // mobile screen
@@ -192,8 +197,6 @@
 //       background-image: url(../images/products/tablet/productstabpic2x2-min.png);
 //     }
 //   }
-
-
 
 .ingridients__list {
   position: relative;
@@ -214,12 +217,12 @@
 .ingridients__item {
   width: 53px;
   min-height: 72px;
-  border: 2px solid #9CBE8F;
+  border: 2px solid #9cbe8f;
   border-radius: 40px;
 
   @include pc {
-      width: 65px;
-      min-height: 90px;
+    width: 65px;
+    min-height: 90px;
   }
 }
 
@@ -231,8 +234,8 @@
   margin: auto;
   width: 43px;
   min-height: 43px;
-  background: #9CBE8F;
-  border: 2px solid #9CBE8F;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
   border-radius: 53px;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 
@@ -241,10 +244,10 @@
   line-height: 1.25;
 
   @include pc {
-      width: 53px;
-      min-height: 53px;
-      font-size: 12px;
-      line-height: 1.23;
+    width: 53px;
+    min-height: 53px;
+    font-size: 12px;
+    line-height: 1.23;
   }
 }
 
@@ -285,22 +288,23 @@
   margin-bottom: 40px;
 
   @include pc {
-  margin-bottom: 48px;  }
+    margin-bottom: 48px;
+  }
 }
 
 .composition__item {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 11px;
-    align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+  align-items: baseline;
 
-    @include mob {
-            @include grid(9px);
-        }
+  @include mob {
+    @include grid(9px);
+  }
 
-        @include pc {
-            @include grid(20px);
-        }
+  @include pc {
+    @include grid(20px);
+  }
 }
 
 .composition__text,
@@ -319,14 +323,14 @@
 
 .modal-form {
   margin: auto;
-  max-width: 368px;;
+  max-width: 368px;
 }
 
 .modal-list.list {
   margin-bottom: 24px;
 
   @include pc {
-  margin-bottom: 32px;
+    margin-bottom: 32px;
   }
 }
 
