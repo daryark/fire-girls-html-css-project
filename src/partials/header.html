@@ -1,25 +1,24 @@
 
   <header class="header section">
-    <div class="container header__main-nav">
-      <a class="header__logo" href="#">
-        <svg width="85" height="60">
+    <div class="container header__container">
+      <a class="logo" href="#">
+        <svg class="logo__icon" width="40" height="37">
           <use href="./images/symbol-defs.svg#icon-logo-ice-cream"></use>
         </svg>
-        
       </a>
       <nav>
-        <ul class="header__navigation">
-          <li class="header__navigation-item">
-            <a class="header__navigation-item-link--current" href="#">Home</a>
+        <ul class="navigation">
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--current" href="#">Home</a>
           </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-item-link" href="#">How it’s made?</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">How it’s made?</a>
           </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-item-link" href="#">Our products</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Our products</a>
           </li>
-          <li class="header__navigation-item">
-            <a class="header__navigation-item-link" href="#">Contact</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -30,8 +29,8 @@
         aria-expanded="false"
         aria-controls="mobile-menu"
       >
-        <svg class="menu-toggle__button-icon">
-          <use href="./images/symbol-defs.svg#icon-arrow-desc"></use>
+        <svg class="menu-toggle__button-icon" width="32" height="32">
+          <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
         </svg>
       </button>
       <div class="mobile__menu-container js-menu-container" id="mobile-menu">
@@ -70,6 +69,9 @@
       </button>
     </div>
   </header>
+
+
+
   <div class="container hero__container">
     <div class="hero__wrap">
       <h1 class="hero__title">ice cream made with passion</h1>
@@ -112,10 +114,36 @@
         >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et</span
       >
-      <svg class="hero__icon" width="40" height="16">
+      <svg class="hero__icon" width="32" height="32">
         <use href="./images/symbol-defs.svg#icon-arrow-desc"></use>
       </svg>
     </div>
+    <!-- Shadow -->
+      <picture>
+      <source
+        srcset="
+         ./images/hero/desktop/ice-cream-shadow-min.png 1x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+         ./images/hero/tablet/ice-cream-shadow-min.png 1x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/mobile/ice-cream-shadow-min.png 1x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero__img"
+        src="./images/hero/desktop/ice-cream-shadow-min.png"
+        alt="ice-cream-shadow"
+      />
+    </picture>
     <picture>
       <source
         srcset="
