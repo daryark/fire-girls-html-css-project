@@ -1,7 +1,4 @@
 .hero {
-  outline: 3px solid tomato;
-  outline-offset: -3px;
-
   position: relative;
   padding-top: 99px;
   padding-bottom: 236px;
@@ -14,30 +11,15 @@
   background-position: 0 458px;
   background-size: contain;
 
-  // background-image: url(../images/hero/mobile/pointsmobx1-min.png);
-  // @include retina {
-  //   background-image: url(../images/hero/mobile/pointsmobx2-min.png);
-  // }
-
   @include tab {
     padding-top: 80px;
     padding-bottom: 24px;
     max-width: 768px;
-
-    // background-image: url(../images/hero/tablet/pointstabx1-min.png);
-    // @include retina {
-    //   background-image: url(../images/hero/tablet/pointstabx2-min.png);
-    // }
   }
   @include pc {
     padding-top: 118px;
     padding-bottom: 103px;
     min-width: 1200px;
-
-    // background-image: url(../images/hero//desktop/pointsdescx1-min.png);
-    // @include retina {
-    //   background-image: url(../images/hero/desktop/pointsdescx2-min.png);
-    // }
   }
 }
 
