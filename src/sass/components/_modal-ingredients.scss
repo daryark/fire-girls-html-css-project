@@ -205,20 +205,3 @@
   font-size: 14px;
   color: var(--secondary-text-color);
 }
-
-.modal-form {
-  margin: auto;
-  max-width: 368px;
-}
-
-.modal-list {
-  margin-bottom: 24px;
-
-  @include pc {
-    margin-bottom: 32px;
-  }
-}
-
-.modal__btn {
-  margin: auto;
-}
