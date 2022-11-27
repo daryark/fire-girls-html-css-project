@@ -312,19 +312,18 @@
   padding-left: 40px;
   padding-right: 40px;
   flex-grow: 1;
-  margin-bottom: 53px;
+  margin-bottom: 45px;
 
   @include tab {
     padding-left: 26px;
     padding-right: 26px;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 
   @include pc {
     font-size: 16px;
     padding-left: 64px;
     padding-right: 64px;
-    margin-bottom: 50px;
   }
 }
 
@@ -333,14 +332,14 @@
   border: none;
   display: block;
   margin: auto;
-  padding-bottom: 16px;
+  padding-bottom: 8px;
 
   @include tab {
-    padding-bottom: 12px;
+    padding-bottom: 4px;
   }
 
   @include pc {
-    padding-bottom: 60px;
+    padding-bottom: 52px;
   }
 
   &:hover,
