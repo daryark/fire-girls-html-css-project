@@ -1,1 +1,97 @@
 <section>Hero</section>
+<section class="hero">
+  <div class="container">
+    <!-- fix this wrap! -->
+    <div class="hero__wrap">
+      <h1 class="hero__title">ice cream made with passion</h1>
+      <div class="hero__stat">
+        <span class="hero__number">16</span>
+        <span class="hero__number-text">cafes</span>
+        <span class="hero__number">23</span>
+        <span class="hero__number-text">food trucks</span>
+      </div>
+    </div>
+    <div class="hero__buttons">
+      <button class="hero__btn btn btn-secondary">Products</button>
+      <a href="#" class="hero__link">How it’s made?</a>
+    </div>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/desktop/smallicecreamdescx1-min.png 1x,
+          ./images/hero/desktop/smallicecreamdescx2-min.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/tablet/smallicecreamtabx1-min.png 1x,
+          ./images/hero/tablet/smallicecreamtabx2-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="tablet-plate"
+        src="./images/hero/tablet/smallicecreamtabx1-min.png"
+        alt="tablet-plate"
+      />
+    </picture>
+    <div class="hero__wrapper">
+      <span class="hero__text"
+        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et</span
+      >
+      <svg class="hero__icon" width="32" height="32">
+        <use href="./images/symbol-defs.svg#icon-arrow-desc"></use>
+      </svg>
+    </div>
+    <!-- Shadow -->
+    <picture>
+      <source
+        srcset="./images/hero/desktop/ice-cream-shadow-min.png 1x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="./images/hero/tablet/ice-cream-shadow-min.png 1x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/hero/mobile/ice-cream-shadow-min.png 1x"
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero__shadow"
+        src="./images/hero/desktop/ice-cream-shadow-min.png"
+        alt="ice-cream-shadow"
+      />
+    </picture>
+    <picture>
+      <source
+        srcset="
+          ./images/hero/desktop/bigicecreamdescx1.png 1x,
+          ./images/hero/desktop/bigicecreamdescx2.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/tablet/bigicecreamtabx1.png 1x,
+          ./images/hero/tablet/bigicecreamtabx2.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/mobile/bigicecreammobx1.png 1x,
+          ./images/hero/mobile/bigicecreammobx2.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero__img"
+        src="./images/hero/mobile/bigicecreammobx1.png"
+        alt="mobile-hero"
+      />
+    </picture>
+  </div>
+</section>

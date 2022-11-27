@@ -1,6 +1,7 @@
 .header {
   background-color: transparent;
-  outline: 1px soid tomato;
+  outline: 3px solid tomato;
+  outline-offset: -3px;
 }
 
 .header__container {
@@ -75,31 +76,13 @@
   }
 }
 
-.header__button {
+.header__btn {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: block;
   }
 }
-
-.header__button.btn {
-  // display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 32px;
-  margin-top: 24px;
-
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-  }
-}
-
-// .header-button.is-hidden {
-//   margin-left: auto;
-//   display: none;
-//   transition: all 250ms linear;
-// }
 
 .menu-toggle {
   padding-top: 16px;

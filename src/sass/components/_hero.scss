@@ -1,6 +1,7 @@
-.hero__container {
-  position: relative;
+.hero {
   height: 502px;
+  outline: 3px solid tomato;
+  outline-offset: -3px;
 
   @include tab {
     height: 415px;
@@ -63,39 +64,38 @@
 }
 
 .hero__buttons {
+  margin-top: 32px;
+
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 32px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(15 / 12);
 
   @media screen and (min-width: 1200px) {
     margin-top: 28px;
   }
 }
-
-.hero__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 108px;
-  min-height: 38px;
-  border: 2px solid var(--accent-color);
-  border-radius: 8px;
-  color: var(--secondary-text-color);
-  &:hover {
-    border: 2px solid var(--button-hover);
-  }
-  &:focus {
-    border: 2px solid var(--button-hover);
+.hero__btn {
+  @media screen and(max-width: 1199px) {
+    padding: 11px 26px;
+    font-size: 12px;
+    border-radius: 8px;
   }
 }
 
 .hero__link {
+  width: 100px;
+  font-weight: 600;
   text-decoration-line: underline;
   color: var(--accent-color);
+
+  @include tab {
+    width: 114px;
+    font-size: 12px;
+  }
+  @include pc {
+    width: 154px;
+    font-size: 14px;
+  }
   &:hover {
     color: var(--button-hover);
   }
@@ -157,9 +157,27 @@
 
 .hero__img {
   position: absolute;
-  bottom: -321px;
-  left: 53%;
-  transform: translateX(-50%);
+  bottom: 0;
+  right: 64px;
+
+  @media screen and (min-width: 768px) {
+    left: 72%;
+    bottom: -52px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 72%;
+    width: 456px;
+    height: 560px;
+    bottom: -78px;
+    filter: drop-shadow(4px -4px 39px #fff);
+  }
+}
+
+.hero__shadow {
+  position: absolute;
+  bottom: 0;
+  right: 52px;
 
   @media screen and (min-width: 768px) {
     left: 72%;
