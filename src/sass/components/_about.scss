@@ -1,3 +1,143 @@
-.test {
-  outline: 1px solid tomato;
+.about {
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @include tab {
+    padding-bottom: 60px;
+  }
+
+  &__label {
+    margin-bottom: 12px;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: var(--line-height-auto);
+
+    @include tab {
+      font-weight: 800;
+      font-size: 22px;
+    }
+    @include pc {
+      font-size: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 54px;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.27;
+
+    @include tab {
+      margin-bottom: 72px;
+
+      font-size: 34px;
+      line-height: 1.26;
+      letter-spacing: 0.06em;
+    }
+    @include pc {
+      margin-bottom: 82px;
+
+      font-size: 36px;
+      line-height: 1.25;
+    }
+  }
+
+  &__cow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tab {
+      flex-direction: row;
+      gap: 32px;
+    }
+
+    @include pc {
+      gap: 100px;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    width: 279px;
+    height: 278px;
+
+    border-radius: 50%;
+    box-shadow: 0px -22px 0px rgba(248, 210, 78, 0.7),
+      0px -22px 0px rgba(217, 217, 217, 0.7),
+      0px -27px 17px rgba(153, 114, 23, 0.25);
+
+    @media screen and(max-width: 767px) {
+      margin-bottom: 40px;
+    }
+
+    @include tab {
+      width: 336px;
+      height: 330px;
+
+      box-shadow: 0px -26px 0px rgba(248, 210, 78, 0.7),
+        0px -26px 0px rgba(217, 217, 217, 0.7),
+        0px -31px 19px rgba(153, 114, 23, 0.25);
+    }
+
+    @include pc {
+      width: 500px;
+      height: 500px;
+
+      box-shadow: 0px -39px 0px rgba(248, 210, 78, 0.7),
+        0px -39px 0px rgba(217, 217, 217, 0.7),
+        0px -47px 30px rgba(153, 114, 23, 0.25);
+    }
+  }
+
+  &__description {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    @include tab {
+      padding: 0;
+      align-items: flex-start;
+      gap: 8px;
+      width: 336px;
+    }
+    @include pc {
+      width: 463px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    line-height: var(--text-line-height);
+
+    @include tab {
+      text-align: left;
+    }
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+      font-size: 12px;
+    }
+  }
+
+  &__text:last-of-type {
+    margin-bottom: 2px;
+
+    @include tab {
+      margin-bottom: 41px;
+    }
+    @include pc {
+      margin-bottom: 46px;
+    }
+  }
 }
