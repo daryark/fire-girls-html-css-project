@@ -118,7 +118,7 @@ body {
 .btn:hover {
   background-color: var(--button-hover);
   transform: translateY(-5px);
-  box-shadow: 0 7px 0 #0a8817;
+  box-shadow: 0 5px 0 #087313;
 }
 .btn:focus {
   background-color: var(--button-hover);
@@ -126,7 +126,7 @@ body {
 }
 .btn:active {
   transform: translateY(-2px);
-  box-shadow: 0 3px 0 #0a8817;
+  box-shadow: 0 3px 0 #087313;
 }
 .btn__icon {
   margin-left: 7px;

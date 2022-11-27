@@ -19,7 +19,7 @@
   &:hover {
     background-color: var(--button-hover);
     transform: translateY(-5px);
-    box-shadow: 0 7px 0 #0a8817;//make it darker!!!
+    box-shadow: 0 5px 0 #087313;
 
   }
   &:focus {
@@ -28,7 +28,7 @@
   }
   &:active {
     transform: translateY(-2px);
-    box-shadow: 0 3px 0 #0a8817;//make it darker!!!
+    box-shadow: 0 3px 0 #087313;
   }
 
   &__icon {
