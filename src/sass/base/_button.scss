@@ -15,7 +15,6 @@
 
   @include transition(background-color);
   @include transition();
-  @include transition(box-shadow);
   &:hover {
     background-color: var(--button-hover);
     transform: translateY(-5px);

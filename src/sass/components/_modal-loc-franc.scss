@@ -103,8 +103,12 @@
     }
     &__title{
         width: 221px;
+        text-align: justify;
+        letter-spacing: normal;
+        margin-bottom: 24px;     
         @include tab{
             width: 322px;
+            text-align: center;
         }
     }
     &__text{
@@ -121,6 +125,9 @@
             width: 448px;
             font-size: 16px;            
         }
+    }
+    &__form{
+        margin-bottom: 24px;
     }
     &__field{
         margin-bottom: 24px;
