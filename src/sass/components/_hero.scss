@@ -33,6 +33,9 @@
   text-transform: uppercase;
   width: 247px;
 }
+.hero__max-title {
+  font-size: 34px;
+}
 
 .hero__stat {
   display: none;
@@ -83,7 +86,7 @@
 }
 
 .hero__link {
-  width: 100px;
+  width: 102px;
   font-weight: 600;
   text-decoration-line: underline;
   color: var(--accent-color);
