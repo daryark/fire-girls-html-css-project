@@ -1,0 +1,21 @@
+.read-more{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-template: 20px;
+    @include tab{
+        gap: 32px;
+    }
+    &__title {        
+        
+    }
+    &__video {
+        width: 224px;
+        height: 199px;
+        @include tab{            
+        }
+    }
+    &__text {
+        min-width: 224px;
+    }
+}
