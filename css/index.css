@@ -1428,6 +1428,18 @@ input[type=radio].visually-hidden {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /*
+  &__button {
+    font-size: 12px;
+    font-weight: 600;
+    width: 134px;
+    max-height: 42px;
+    @include tab {
+      font-size: 14px;
+      width: 145px;
+      max-height: 42px;
+    }
+  }*/
 }
 @media screen and (min-width: 768px) {
   .loc-modal {
@@ -1462,17 +1474,12 @@ input[type=radio].visually-hidden {
     height: 260px;
   }
 }
-.loc-modal__button {
-  font-size: 12px;
-  font-weight: 600;
-  width: 134px;
-  max-height: 42px;
+.loc-modal__img-map {
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
-  .loc-modal__button {
-    font-size: 14px;
-    width: 145px;
-    max-height: 42px;
+  .loc-modal__img-map {
+    margin-bottom: 32px;
   }
 }
 
@@ -1885,6 +1892,18 @@ input[type=radio].visually-hidden {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  /*
+  &__button {
+    font-size: 12px;
+    font-weight: 600;
+    width: 134px;
+    max-height: 42px;
+    @include tab {
+      font-size: 14px;
+      width: 145px;
+      max-height: 42px;
+    }
+  }*/
 }
 @media screen and (min-width: 768px) {
   .loc-modal {
@@ -1919,17 +1938,12 @@ input[type=radio].visually-hidden {
     height: 260px;
   }
 }
-.loc-modal__button {
-  font-size: 12px;
-  font-weight: 600;
-  width: 134px;
-  max-height: 42px;
+.loc-modal__img-map {
+  margin-bottom: 24px;
 }
 @media screen and (min-width: 768px) {
-  .loc-modal__button {
-    font-size: 14px;
-    width: 145px;
-    max-height: 42px;
+  .loc-modal__img-map {
+    margin-bottom: 32px;
   }
 }
 
