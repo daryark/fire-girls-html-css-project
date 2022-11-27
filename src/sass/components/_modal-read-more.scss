@@ -15,16 +15,28 @@
         margin-bottom: 0;
         font-size: 16px;
         line-height: 1.5;
+        @include tab{
+            font-size: 20px;
+            line-height: 1.4;
+        }
     }
     &__video {
         width: 224px;
         height: 199px;
-        @include tab{            
+        @include tab{
+            width: 448px;
+            height: 205px;           
         }
     }
     &__text {
         min-width: 224px;
         font-size: 14px;
         line-height: 1.4;
+        text-align: justify;
+        letter-spacing: normal;
+        color: var(--secondary-text-color);
+        @include tab{
+            font-size: 16px;
+        }
     }
 }
