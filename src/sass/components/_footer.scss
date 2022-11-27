@@ -120,11 +120,12 @@
     justify-content: center;
     align-items: center;
 
-    @include transition();
+    @include transition-double(transform);
 
     &:hover,
     &:focus {
       color: var(--primary-text-color);
+      transform: scale(1.05);
     }
   }
   &__icon {
