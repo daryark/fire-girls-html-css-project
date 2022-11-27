@@ -108,7 +108,6 @@
   &__item {
     width: 34px;
     height: 34px;
-    
   }
   &__link {
     border-radius: 50%;
@@ -146,5 +145,11 @@
   &__call {
     margin-left: 3px;
     color: var(--primary-text-color);
+    @include transition-double(transform);
+
+    &:hover,
+    &:focus {
+      color: var(--button-hover);
+    }
   }
 }
