@@ -1426,20 +1426,8 @@ input[type=radio].visually-hidden {
   transform: translate(-50%, -50%) scale(1);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  /*
-  &__button {
-    font-size: 12px;
-    font-weight: 600;
-    width: 134px;
-    max-height: 42px;
-    @include tab {
-      font-size: 14px;
-      width: 145px;
-      max-height: 42px;
-    }
-  }*/
 }
 @media screen and (min-width: 768px) {
   .loc-modal {
@@ -1467,13 +1455,6 @@ input[type=radio].visually-hidden {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .loc-modal__link-map {
-    margin-bottom: 32px;
-    width: 448px;
-    height: 260px;
-  }
-}
 .loc-modal__img-map {
   margin-bottom: 24px;
   width: 224px;
@@ -1484,6 +1465,14 @@ input[type=radio].visually-hidden {
     margin-bottom: 32px;
     width: 448px;
     height: 260px;
+  }
+}
+.loc-modal__button {
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .loc-modal__button {
+    font-size: 14px;
   }
 }
 
@@ -1894,20 +1883,8 @@ input[type=radio].visually-hidden {
   transform: translate(-50%, -50%) scale(1);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  /*
-  &__button {
-    font-size: 12px;
-    font-weight: 600;
-    width: 134px;
-    max-height: 42px;
-    @include tab {
-      font-size: 14px;
-      width: 145px;
-      max-height: 42px;
-    }
-  }*/
 }
 @media screen and (min-width: 768px) {
   .loc-modal {
@@ -1935,13 +1912,6 @@ input[type=radio].visually-hidden {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
-  .loc-modal__link-map {
-    margin-bottom: 32px;
-    width: 448px;
-    height: 260px;
-  }
-}
 .loc-modal__img-map {
   margin-bottom: 24px;
   width: 224px;
@@ -1952,6 +1922,14 @@ input[type=radio].visually-hidden {
     margin-bottom: 32px;
     width: 448px;
     height: 260px;
+  }
+}
+.loc-modal__button {
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .loc-modal__button {
+    font-size: 14px;
   }
 }
 

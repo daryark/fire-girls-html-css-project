@@ -8,9 +8,9 @@
   
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  text-align: center; 
-  
+
   @include tab {
     min-width: 568px;
     min-height: 458px;
@@ -32,12 +32,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @include tab {
-      margin-bottom: 32px;
-      width: 448px;
-      height: 260px;
-    }
   }
   &__img-map{
     margin-bottom: 24px;
@@ -49,18 +43,12 @@
       height: 260px;
     }
   }
-  /*
-  &__button {
+  &__button{
     font-size: 12px;
-    font-weight: 600;
-    width: 134px;
-    max-height: 42px;
-    @include tab {
+    @include tab{
       font-size: 14px;
-      width: 145px;
-      max-height: 42px;
     }
-  }*/
+  }
 }
 .franc-modal {
   height: 674px;
