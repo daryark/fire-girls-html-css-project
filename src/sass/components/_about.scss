@@ -70,6 +70,10 @@
     width: 279px;
     height: 278px;
 
+    transform: scale(1);
+    @include transition(transform);
+    transition-duration: 1000ms;
+
     border-radius: 50%;
     box-shadow: 0px -22px 0px rgba(248, 210, 78, 0.7),
       0px -22px 0px rgba(217, 217, 217, 0.7),
@@ -96,9 +100,9 @@
         0px -39px 0px rgba(217, 217, 217, 0.7),
         0px -47px 30px rgba(153, 114, 23, 0.25);
     }
-
     &:hover {
-    cursor: pointer;  
+      cursor: pointer;
+      transform: scale(1.1);
     }
   }
 
