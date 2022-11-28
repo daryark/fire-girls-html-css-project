@@ -2,6 +2,7 @@
   height: 1936px;
   padding-top: 60px;
   padding-bottom: 60px;
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -98,7 +99,6 @@
 .product__item {
   display: block;
   position: relative;
-  // width: 280px;
   max-width: 440px;
 
   border-radius: 24px;
@@ -123,28 +123,32 @@
 
 .product__item::before {
   content: '';
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: -97px;
-  position: absolute;
-  background-color: transparent;
+
   width: 200px;
   height: 200px;
+
+  background-color: transparent;
   border-radius: 100px;
 
   @include tab {
+    top: -108px;
     left: 50%;
     transform: translateX(-50%);
-    top: -108px;
   }
 
   @include pc {
-    width: 302px;
-    height: 300px;
-    border-radius: 302px;
+    top: -167px;
     left: 50%;
     transform: translateX(-50%);
-    top: -167px;
+
+    width: 302px;
+    height: 300px;
+
+    border-radius: 302px;
   }
 }
 
@@ -162,12 +166,14 @@
 
 .product__item::after {
   content: '';
+  position: absolute;
   top: -108px;
   left: 50%;
   transform: translateX(-50%);
+
   width: 200px;
   height: 197px;
-  position: absolute;
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -176,6 +182,7 @@
     top: -120px;
     left: 50%;
     transform: translateX(-50%);
+
     width: 200px;
     height: 197px;
   }
@@ -184,6 +191,7 @@
     top: -183px;
     left: 50%;
     transform: translateX(-50%);
+
     width: 302px;
     height: 300px;
   }
@@ -212,14 +220,12 @@
   }
 }
 .product__item--yellow::after {
-  // mobile screen
   background-image: url(../images/products/mobile/productsmobpic2x1-min.png);
 
   @include retina {
     background-image: url(../images/products/mobile/productsmobpic2x2-min.png);
   }
 
-  // tablet screen
   @include tab {
     background-image: url(../images/products/tablet/productstabpic2x1-min.png);
 
@@ -228,7 +234,6 @@
     }
   }
 
-  // desktop screen
   @include pc {
     background-image: url(../images/products/desktop/productsdescpic2x1-min.png);
 
@@ -239,14 +244,12 @@
 }
 
 .product__item--orange::after {
-  // mobile screen
   background-image: url(../images/products/mobile/productsmobpic3x1-min.png);
 
   @include retina {
     background-image: url(../images/products/mobile/productsmobpic3x2-min.png);
   }
 
-  // tablet screen
   @include tab {
     background-image: url(../images/products/tablet/productstabpic3x1-min.png);
 
@@ -255,7 +258,6 @@
     }
   }
 
-  // desktop screen
   @include pc {
     background-image: url(../images/products/desktop/productsdescpic3x1-min.png);
 
@@ -268,8 +270,9 @@
 .product__text {
   display: flex;
   flex-direction: column;
-  height: 100%;
   text-align: center;
+
+  height: 100%;
   width: 100%;
   border-radius: 24px;
 
@@ -295,15 +298,17 @@
 }
 
 .product__title {
-  color: var(--secondary-text-color);
+  padding-top: 123px;
+  margin-bottom: 40px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 20px;
   line-height: var(--line-height-auto);
   letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
-  padding-top: 123px;
-  margin-bottom: 40px;
-  text-align: center;
+
+  color: var(--secondary-text-color);
 
   @include tab {
     padding-top: 108px;
@@ -317,13 +322,15 @@
 }
 
 .product__description {
-  font-size: 14px;
-  line-height: 1.76;
-  color: var(--secondary-text-color);
+  margin-bottom: 45px;
   padding-left: 40px;
   padding-right: 40px;
   flex-grow: 1;
-  margin-bottom: 45px;
+
+  font-size: 14px;
+  line-height: 1.76;
+
+  color: var(--secondary-text-color);
 
   @include tab {
     padding-left: 26px;
@@ -339,11 +346,13 @@
 }
 
 .product__btn {
-  background-color: inherit;
-  border: none;
   display: block;
   margin: auto;
   padding-bottom: 8px;
+
+  background-color: inherit;
+  border: none;
+
   transform: scaleX(1);
   @include transition(transform);
 

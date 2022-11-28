@@ -1,0 +1,68 @@
+<div class="backdrop is-hidden" data-backdrop-franc>
+  <div class="modal franc-modal">
+    <button type="button" class="modal-close" data-close-modal-franc>
+      <svg class="close-button" width="20" height="20">
+        <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <p class="loc-modal__title franc-modal__title">
+      Thank you for your interest in owning an Ice Cream shop
+    </p>
+    <p class="franc-modal__text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="modal-form franc-modal__form">
+      <ul class="modal-list">
+        <li class="modal-item">
+          <label for="user-name" class="modal-label"></label>
+          <input
+            type="text"
+            class="modal-input franc-modal__input"
+            name="user-name"
+            minlength="2"
+            id="user-name"
+            placeholder="Name"
+            required
+          />
+        </li>
+        <li class="modal-item">
+          <label for="tel" class="modal-label"></label>
+          <input
+            type="tel"
+            class="modal-input franc-modal__input"
+            name="user-tel"
+            id="tel"
+            placeholder="Phone"
+            required
+          />
+        </li>
+        <li class="modal-item">
+          <label for="mail" class="modal-label"></label>
+          <input
+            type="mail"
+            class="modal-input franc-modal__input"
+            name="user-mail"
+            id="mail"
+            placeholder="Email"
+            required
+          />
+        </li>
+        <li class="modal-item">
+          <label for="user-comment" class="text"></label>
+          <textarea
+            name="user-comment"
+            class="modal-comment franc-modal__comment"
+            id="user-comment"
+            rows="2"
+            placeholder="Comment"
+          ></textarea>
+        </li>
+      </ul>
+    </form>
+    <button type="submit" class="btn franc-modal__btn">Submit</button>
+  </div>
+</div>

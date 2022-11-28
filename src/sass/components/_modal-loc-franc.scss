@@ -1,11 +1,11 @@
 .loc-modal {
-  max-width: 280px;  
+  max-width: 280px;
   min-height: 365px;
 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,19 +33,19 @@
     justify-content: center;
     align-items: center;
   }
-  &__img-map{
+  &__img-map {
     margin-bottom: 24px;
     width: 224px;
     height: 199px;
-    @include tab{
+    @include tab {
       margin-bottom: 32px;
       width: 448px;
       height: 260px;
     }
   }
-  &__button{
+  &__button {
     font-size: 12px;
-    @include tab{
+    @include tab {
       font-size: 14px;
     }
   }
@@ -53,15 +53,15 @@
 .franc-modal {
   max-width: 280px;
   min-height: 674px;
-  top: 50%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, 0) scale(1);
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  @include tab{
+  @include tab {
     width: 448px;
     height: 604px;
   }
@@ -71,7 +71,7 @@
     text-align: center;
     letter-spacing: normal;
     margin-bottom: 20px;
-    
+
     @include tab {
       width: 322px;
       text-align: center;
@@ -95,27 +95,27 @@
       font-size: 16px;
     }
   }
-  &__form{
+  &__form {
     margin: 0;
-    @include tab{
+    @include tab {
       width: 368px;
     }
   }
-  &__input{
+  &__input {
     width: 100%;
     height: 32px;
-    @include tab{
+    @include tab {
       height: 42px;
     }
   }
-  &__comment{
+  &__comment {
     width: 100%;
     height: 64px;
-    @include tab{
+    @include tab {
       height: 84px;
     }
   }
-  &__btn{
+  &__btn {
     height: 42px;
   }
 }
