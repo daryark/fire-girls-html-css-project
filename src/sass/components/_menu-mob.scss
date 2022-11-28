@@ -58,7 +58,15 @@
   color: #fff;
 }
 */
-.mobile__menu-close-btn {
+.mobile__menu-close-btn{
+  position: absolute;
+  display: block;
+  background-color: transparent;
+  border: none;
+  top: 21px;
+  right: 25px;  
+}
+/*.mobile__menu-close-btn {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -75,7 +83,7 @@
     color: #2196f3;
   }
 }
-
+*/
 .mobile-menu__logo {
   color: var(--accent-color);
   width: 41px;
