@@ -108,7 +108,7 @@
   margin-top: 100px;
 }
 
-.mobile_menu-link {
+.mobile__menu-link {
   display: flex;
   gap: 40px;
   justify-content: center;
@@ -133,7 +133,7 @@
   }
 }
 
-.mobile_menu-button-wrapper {
+.mobile__menu-button-wrapper {
   @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
@@ -144,7 +144,7 @@
   // }
 }
 
-.mobile_menu-button {
+.mobile__menu-button {
   margin-top: 111px;
 
   @media screen and (max-width: 767px) {
