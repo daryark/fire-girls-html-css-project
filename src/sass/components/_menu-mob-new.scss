@@ -18,9 +18,12 @@
   &__container {
     padding-top: 100px;
     padding-bottom: 64px;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+
     height: 100%;
     @include tab{
       padding-top: 140px;
@@ -71,6 +74,9 @@
   justify-content: center;
   align-items: center;
   gap: 32px;
+  @include tab{
+    gap: 40px;
+  }
 }
 
 .mobile__menu-link { 
@@ -85,14 +91,17 @@
   &:focus {
     color: var(--secondary-text-color);
   }
+  @include tab{
+    font-size: 48px;
+  }
 }
 
 .mobile__menu-button {
   margin-top: 110px;
-  display: none;
+  display: block;  
 
-  @media screen and (max-width: 767px) {
-    display: block;
+  @include mob {
+    display: none;
   }
 }
 
