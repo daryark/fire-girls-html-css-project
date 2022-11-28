@@ -91,7 +91,15 @@
     margin-left: 211px;
   }
 }
-
+.menu-open-btn{
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  @include tablet {
+    display: none;
+  }
+}
+/*
 .menu-toggle {
   @include no-pc {
     margin-left: auto;
@@ -110,4 +118,4 @@
     }
   }
   display: none;
-}
+}*/
