@@ -1,46 +1,46 @@
-.read-more{
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+.read-more {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 
-    padding: 28px 28px;
-    @include tab{
-        gap: 32px;
-        padding: 32px 60px;
-        min-height: 449px;
+  padding: 28px 28px;
+  @include tab {
+    gap: 32px;
+    padding: 32px 60px;
+    min-height: 449px;
+  }
+  &__title {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    @include tab {
+      font-size: 20px;
+      line-height: 1.4;
     }
-    &__title {        
-        margin-bottom: 0;
-        font-size: 16px;
-        line-height: 1.5;
-        @include tab{
-            font-size: 20px;
-            line-height: 1.4;
-        }
+  }
+  &__video {
+    min-width: 224px;
+    min-height: 199px;
+    @include tab {
+      width: 448px;
+      height: 205px;
     }
-    &__video {
-        min-width: 224px;
-        min-height: 199px;
-        @include tab{
-            width: 448px;
-            height: 205px;           
-        }
+  }
+  &__text {
+    min-width: 224px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+    letter-spacing: normal;
+    color: var(--secondary-text-color);
+    @include tab {
+      font-size: 16px;
     }
-    &__text {
-        min-width: 224px;
-        font-size: 14px;
-        line-height: 1.4;
-        text-align: justify;
-        letter-spacing: normal;
-        color: var(--secondary-text-color);
-        @include tab{
-            font-size: 16px;
-        }
-    }
+  }
 }

@@ -100,19 +100,23 @@
   position: relative;
   // width: 280px;
   max-width: 440px;
-  @include transition(transform);
-  @include transition(box-shadow);
+
+  border-radius: 24px;
+  transform: scale(1);
+  @include transition-double(transform, box-shadow);
 
   @include tab {
+    border-radius: 15px;
     width: 224px;
   }
 
   @include pc {
+    border-radius: 24px;
     width: 370px;
   }
   &:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    transform: scale(1.03);
+    box-shadow: 0px 5px 2px rgba(0, 0, 0, 0.1), 0px 3px 4px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
@@ -270,7 +274,7 @@
   border-radius: 24px;
 
   @include tab {
-    border-radius: 15, 8px;
+    border-radius: 15px;
   }
 
   @include pc {
@@ -340,6 +344,8 @@
   display: block;
   margin: auto;
   padding-bottom: 8px;
+  transform: scaleX(1);
+  @include transition(transform);
 
   @include tab {
     padding-bottom: 4px;
@@ -351,6 +357,7 @@
 
   &:hover,
   &:focus {
+    transform: scaleX(1.5);
     cursor: pointer;
   }
   border: none;
