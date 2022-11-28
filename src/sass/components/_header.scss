@@ -95,7 +95,8 @@
   background-color: transparent;
   border: none;
   margin-left: auto;
-  @include tab {
+  color: var(--primary-text-color);
+  @include pc {
     display: none;
   }
 }

@@ -592,8 +592,9 @@ input[type=radio].visually-hidden {
   background-color: transparent;
   border: none;
   margin-left: auto;
+  color: var(--primary-text-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .menu-open-btn {
     display: none;
   }
