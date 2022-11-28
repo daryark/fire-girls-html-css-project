@@ -1,1 +1,44 @@
-<header>Header_</header>
+<header class="header section">
+  <div class="container header__container">
+    <a class="logo" href="#">
+      <svg class="logo__icon" width="40" height="37">
+        <use href="./images/symbol-defs.svg#icon-logo-ice-cream"></use>
+      </svg>
+    </a>
+    <nav>
+      <ul class="navigation">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="#"
+            >Home</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">How it’s made?</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Our products</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      class="menu-toggle js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu-toggle__button-icon" width="32" height="32">
+        <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
+      </svg>
+    </button>
+    <button class="btn header__btn" type="button" data-open-menu>
+      Buy now
+      <svg width="12" height="12" class="btn__icon">
+        <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+      </svg>
+    </button>
+  </div>
+</header>

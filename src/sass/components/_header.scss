@@ -1,3 +1,113 @@
-.test {
-  outline: 1px solid tomato;
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 480px;
+
+  background-color: transparent;
+
+  @include tab {
+    max-width: 768px;
+  }
+  @include pc {
+    max-width: 1200px;
+  }
+}
+
+.header__container {
+  padding-top: 13px;
+  display: flex;
+  align-items: flex-end;
+  @include tab {
+    padding-top: 20px;
+  }
+  @include pc {
+    padding-top: 8px;
+    align-items: center;
+  }
+}
+
+.logo {
+  color: var(--accent-color);
+
+  &__icon {
+    width: 40px;
+    height: 37px;
+
+    @include tab {
+      width: 48px;
+      height: 44px;
+    }
+    @include pc {
+      width: 60px;
+      height: 65px;
+    }
+  }
+}
+
+.navigation {
+  display: none;
+
+  @include pc {
+    @include flex();
+    gap: 27px;
+    margin-left: 301px;
+  }
+}
+
+.navigation__item {
+  line-height: var(--line-height-auto);
+  letter-spacing: normal;
+  @include transition();
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  &--current {
+    color: var(--accent-color);
+  }
+}
+.navigation__link {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  font-weight: 700;
+}
+
+.header__btn {
+  display: none;
+
+  @include tab {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+  }
+  @include pc {
+    margin-left: 211px;
+  }
+}
+
+.menu-toggle {
+  @include no-pc {
+    margin-left: auto;
+    @include flex();
+
+    background-color: transparent;
+    color: #fff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+
+    padding: 5px;
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+  display: none;
 }

@@ -1,1 +1,108 @@
-<section>Hero</section>
+<section class="hero">
+  <div class="container">
+    <div class="hero__up-wrapper">
+      <h1 class="hero__title">
+        ice cream made with <span class="hero__max-title">passion</span>
+      </h1>
+      <div class="hero__stat">
+        <span class="hero__number">16</span>
+        <span class="hero__number-text">cafes</span>
+        <span class="hero__number">23</span>
+        <span class="hero__number-text">food trucks</span>
+      </div>
+    </div>
+    <div class="hero__buttons">
+      <button class="hero__btn btn btn-secondary">Products</button>
+      <a href="#" class="hero__link">How it’s made?</a>
+    </div>
+    <!-- Dots img -->
+    <picture>
+      <source
+        srcset="
+          ./images/hero/desktop/pointsdescx1-min.png 1x,
+          ./images/hero/desktop/pointsdescx2-min.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/tablet/pointstabx1-min.png 1x,
+          ./images/hero/tablet/pointstabx2-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/mobile/pointsmobx1-min.png 1x,
+          ./images/hero/mobile/pointsmobx2-min.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero__dots-img"
+        src="./images/hero/desktop/pointsdescx1-min.png"
+        alt="dots"
+      />
+    </picture>
+    <div class="hero__bottom-wrapper">
+      <span class="hero__text"
+        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et</span
+      >
+      <svg class="hero__icon" width="41" height="16">
+        <use href="./images/symbol-defs.svg#icon-arrow-desc"></use>
+      </svg>
+    </div>
+    <!-- Plate with icecream -->
+    <picture>
+      <source
+        srcset="
+          ./images/hero/desktop/smallicecreamdescx1-min.png 1x,
+          ./images/hero/desktop/smallicecreamdescx2-min.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/tablet/smallicecreamtabx1-min.png 1x,
+          ./images/hero/tablet/smallicecreamtabx2-min.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        class="tablet-plate"
+        src="./images/hero/tablet/smallicecreamtabx1-min.png"
+        alt="tablet-plate"
+      />
+    </picture>
+    <!-- Big icecream -->
+    <picture>
+      <source
+        srcset="
+          ./images/hero/desktop/bigicecreamdescx1.png 1x,
+          ./images/hero/desktop/bigicecreamdescx2.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero/tablet/bigicecreamtabx1.png 1x,
+          ./images/hero/tablet/bigicecreamtabx2.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+          ./images/hero/mobile/bigicecreammobx1.png 1x,
+          ./images/hero/mobile/bigicecreammobx2.png 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero__ice-cream"
+        src="./images/hero/mobile/bigicecreammobx1.png"
+        alt="mobile-hero"
+      />
+    </picture>
+  </div>
+</section>
