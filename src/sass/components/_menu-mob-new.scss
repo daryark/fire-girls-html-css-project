@@ -24,15 +24,17 @@
   }
   &__logo {
   color: var(--accent-color);
-  width: 41px;
+  width: 40px;
   height: 37px;
   top: 12px;
-  left: 31px;
+  left: 20px;
   position: absolute;
 
-  @media screen and (min-width: 768px) {
+ @include tab {
     top: 20px;
     left: 32px;
+    width: 48px;
+    height: 44px;
   }
 }
 }
@@ -42,7 +44,8 @@
   background-color: transparent;
   border: none;
   top: 21px;
-  right: 25px;  
+  right: 25px;
+  color: var(--primary-text-color);
 }
 
 
