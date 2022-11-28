@@ -12,6 +12,9 @@
         gap: 20px;
 
         margin-bottom: 28px;
+        @include tab{
+            flex-direction: row;
+        }
     }
     &__item {
         position: relative;
