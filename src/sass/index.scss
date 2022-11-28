@@ -4,7 +4,8 @@
 @import './base/reset';
 @import './base/body';
 @import './base/button';
-@import './base/modal-inputs';
+@import './base/modal-wrapper';
+@import './base/modal-form';
 
 @import './utils/visually-hidden';
 @import './utils/container';
@@ -22,4 +23,5 @@
 @import './components/footer';
 
 @import './components/modal-ingredients';
+@import './components/modal-read-more';
 @import './components/modal-loc-franc';

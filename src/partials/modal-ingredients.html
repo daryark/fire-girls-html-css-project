@@ -1,1 +1,96 @@
-<section>test</section>
+<!-- is-hidden -->
+<div class="backdrop is-hidden" data-backdrop-ingridients>
+  <div class="modal">
+    <button type="button" class="modal-close" data-close-modal-ingridients>
+      <svg class="close-button" width="20" height="20">
+        <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Chololate icecream</h2>
+    <div>
+      <ul class="ingridients__list ingridients__list--green">
+        <li class="ingridients__item">
+          <p class="card__number">320</p>
+          <p class="card__text">kcal</p>
+        </li>
+        <li class="ingridients__item">
+          <p class="card__number">4g</p>
+          <p class="card__text">Protein...</p>
+        </li>
+        <li class="ingridients__item">
+          <p class="card__number">8,2g</p>
+          <p class="card__text">Fats</p>
+        </li>
+        <li class="ingridients__item">
+          <p class="card__number">40,4g</p>
+          <p class="card__text">Carbs</p>
+        </li>
+      </ul>
+      <h3 class="composition__title">Ingredients</h3>
+      <ul class="composition__list">
+        <li class="composition__item">
+          <p class="composition__text">Milk</p>
+          <p class="composition__weight">100ml</p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__text">Belgian chocolate</p>
+          <p class="composition__weight">20g</p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__text">Cream</p>
+          <p class="composition__weight">150 ml</p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__text">Cocoa powder</p>
+          <p class="composition__weight">30g</p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__text">Sugar</p>
+          <p class="composition__weight">40g</p>
+        </li>
+        <li class="composition__item">
+          <p class="composition__text">Vanilla sugar</p>
+          <p class="composition__weight">10g</p>
+        </li>
+      </ul>
+      <form class="modal-form">
+        <ul class="modal-list">
+          <li class="modal-item">
+            <label for="user-name" class="modal-label"></label>
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              minlength="2"
+              id="user-name"
+              placeholder="Name"
+              required
+            />
+          </li>
+          <li class="modal-item">
+            <label for="tel" class="modal-label"></label>
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              id="tel"
+              placeholder="Phone"
+              required
+            />
+          </li>
+          <li class="modal-item">
+            <label for="user-comment" class="text"></label>
+            <textarea
+              name="user-comment"
+              class="modal-comment"
+              id="user-comment"
+              rows="2"
+              placeholder="Comment"
+            ></textarea>
+          </li>
+        </ul>
+        <button type="submit" class="btn modal__btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

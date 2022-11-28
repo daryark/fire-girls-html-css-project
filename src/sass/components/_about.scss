@@ -96,6 +96,10 @@
         0px -39px 0px rgba(217, 217, 217, 0.7),
         0px -47px 30px rgba(153, 114, 23, 0.25);
     }
+
+    &:hover {
+    cursor: pointer;  
+    }
   }
 
   &__description {

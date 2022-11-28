@@ -12,16 +12,21 @@
   color: var(--secondary-text-color);
   border-radius: 10px;
   border-color: transparent;
+  outline: none;
 
-  @include transition(background-color);
-  @include transition();
-
+  @include transition-double(background-color);
   &:hover {
     background-color: var(--button-hover);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 0 #087313;
   }
   &:focus {
     background-color: var(--button-hover);
     color: var(--primary-text-color);
+  }
+  &:active {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 0 #087313;
   }
 
   &__icon {
@@ -35,14 +40,15 @@
 
   background-color: transparent;
 
-  @include transition(background-color);
-  @include transition();
+  @include transition-double(background-color);
 
   &:hover {
+    background-color: transparent;
     border-color: var(--button-hover);
   }
 
   &:focus {
+    background-color: transparent;
     border-color: var(--button-hover);
     color: var(--primary-text-color);
   }
