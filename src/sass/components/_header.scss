@@ -95,7 +95,7 @@
   background-color: transparent;
   border: none;
   margin-left: auto;
-  @include tablet {
+  @include tab {
     display: none;
   }
 }
