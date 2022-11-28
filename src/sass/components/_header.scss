@@ -1,143 +1,113 @@
 .header {
   position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 480px;
+
   background-color: transparent;
 
-  // C: helper styles
-  outline: 3px solid tomato;
-  outline-offset: -3px;
-  background-color: rgba(223, 31, 130, 1);
-  opacity: 0.2;
-
-  height: 56px;
   @include tab {
-    height: 80px;
+    max-width: 768px;
   }
   @include pc {
-    height: 100px;
+    max-width: 1200px;
   }
-  // C: end of helper styles
 }
 
-// .header__container {
-//   display: flex;
-//   align-items: center;
-//   // width: 100%;
-// }
+.header__container {
+  padding-top: 13px;
+  display: flex;
+  align-items: flex-end;
+  @include tab {
+    padding-top: 20px;
+  }
+  @include pc {
+    padding-top: 8px;
+    align-items: center;
+  }
+}
 
-// .logo {
-//   padding-top: 12px;
-//   padding-right: 12px;
+.logo {
+  color: var(--accent-color);
 
-//   color: var(--accent-color);
+  &__icon {
+    width: 40px;
+    height: 37px;
 
-//   @include tab {
-//     // margin-right: 440px;
-//     margin-top: 20px;
-//   }
-//   @include pc {
-//     margin-right: 0;
-//   }
+    @include tab {
+      width: 48px;
+      height: 44px;
+    }
+    @include pc {
+      width: 60px;
+      height: 65px;
+    }
+  }
+}
 
-//   &__icon {
-//     width: 40px;
-//     height: 37px;
+.navigation {
+  display: none;
 
-//     @include tab {
-//       width: 48px;
-//       height: 44px;
-//     }
-//     @include pc {
-//       width: 60px;
-//       height: 65px;
-//     }
-//   }
-// }
+  @include pc {
+    @include flex();
+    gap: 27px;
+    margin-left: 301px;
+  }
+}
 
-// .navigation {
-//   display: none;
+.navigation__item {
+  line-height: var(--line-height-auto);
+  letter-spacing: normal;
+  @include transition();
 
-//   @media screen and (min-width: 1200px) {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     gap: 27px;
-//     margin: 40px 0 20px 269px;
-//   }
-// }
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 
-// .navigation__item {
-//   color: var(--primary-text-color);
-//   font-weight: 700;
-//   line-height: 1.25;
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &--current {
+    color: var(--accent-color);
+  }
+}
+.navigation__link {
+  padding-top: 25px;
+  padding-bottom: 25px;
 
-//   &:focus,
-//   &:hover {
-//     color: #f8d24e;
-//   }
+  font-weight: 700;
+}
 
-//   &--current {
-//     color: var(--primary-text-color);
-//     font-weight: 700;
-//     line-height: 1.25;
-//     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.header__btn {
+  display: none;
 
-//     &:focus,
-//     &:hover {
-//       color: #f8d24e;
-//     }
-//   }
-// }
+  @include tab {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+  }
+  @include pc {
+    margin-left: 211px;
+  }
+}
 
-// .header__btn {
-//   display: none;
+.menu-toggle {
+  @include no-pc {
+    margin-left: auto;
+    @include flex();
 
-//   @include tab {
-//     display: block;
-//   }
-// }
+    background-color: transparent;
+    color: #fff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
 
-// .menu-toggle {
-//   padding-top: 16px;
-//   padding-left: 16px;
+    padding: 5px;
 
-//   display: inline-flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-left: auto;
-
-//   background-color: transparent;
-//   color: #fff;
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-//   border: none;
-
-//   @media screen and (min-width: 768px) {
-//     margin-top: 29px;
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     display: none;
-//   }
-
-//   &:hover,
-//   &:focus {
-//     fill: var(--accent-color);
-//   }
-// }
-
-// .menu-toggle__button-icon {
-//   display: inline-flex;
-//   justify-content: center;
-//   align-items: center;
-//   // position: absolute;
-//   width: 32px;
-//   height: 32px;
-//   // background: none;
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     fill: var(--accent-color);
-//   }
-// }
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+  display: none;
+}
