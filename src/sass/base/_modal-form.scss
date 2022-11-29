@@ -48,10 +48,13 @@
   font-size: 14px;
   line-height: 1.4;
 
-  outline: transparent;
+  outline: unset;
   padding: 11px;
   resize: none;
   display: block;
+  &:focus {
+    border: 1px solid var(--secondary-text-color);
+  }
 }
 
 .modal-comment::placeholder,

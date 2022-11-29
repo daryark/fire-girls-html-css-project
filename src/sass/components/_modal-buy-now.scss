@@ -1,0 +1,193 @@
+.modal__title {
+    margin-bottom: 83px;
+    @include tab {
+    margin-bottom: 103px;
+    }
+}
+.buy-now{
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 83px;
+
+        margin-bottom: 28px;
+        @include tab{
+            flex-direction: row;
+            gap: 32px;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 132px;
+        height: 136px;
+        border-bottom-left-radius: 15.8px;
+        border-bottom-right-radius: 15.8px;
+
+        padding-bottom: 20px;
+
+
+        @include tab {
+            height: 135px;
+        }
+
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+        &::before{
+            content: '';
+            left: 50%;
+            transform: translateX(-50%);
+            top: -56px;
+            position: absolute;
+            background-color: transparent;
+            width: 132px;
+            height: 132px;
+            border-radius: 100px;
+
+            @include tab {
+                height: 131px;
+            }
+        }
+        &::after{
+            content: '';
+            left: 50%;
+            top: -63px;
+            transform: translateX(-50%);
+            width: 132px;
+            height: 132px;
+            position: absolute;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            @include tab {
+                height: 131px;
+            }
+        }
+    }
+    &__item--green {
+        // box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+        border: 2px solid #96AF8C;
+    
+        &::before{
+        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+        background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
+                #D9D9D9;
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+        }
+        &::after{
+            background-image: url(../images/modal-buy-now/mobile/modalbuynowmobpic1x1-min.png);
+
+            @include retina {
+                background-image: url(../images/modal-buy-now/mobile/modalbuynowmobpic1x2-min.png);
+            }
+            @include tab{
+                background-image: url(../images/modal-buy-now/tablet/modalbuynowpic1tab1-min.png);
+                @include retina{
+                    background-image: url(../images/modal-buy-now/tablet/modalbuynowpic1tabx2-min.png);
+                }
+            }
+            @include pc{
+                background-image: url(../images/modal-buy-now/desktop/modalbuynowpic1descx1-min.png);
+                @include retina{
+                    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic1descx2-min.png);
+                }
+            }
+        }
+    }
+    
+    &__title {
+        font-size: 16px;
+        line-height: 1.25;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        color: var(--secondary-text-color);
+        text-transform: uppercase;      
+    }
+
+    &__item--yellow {
+        // box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+        background: #EFD478;
+        border: 2px solid #EFD478;
+        box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+
+        &::before{
+            background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
+        }
+
+
+        &::after{
+            background-image: url(../images/modal-buy-now/mobile/modalbuynowmobpic2x1-min.png);
+
+            @include retina {
+                background-image: url(../images/modal-buy-now/mobile/modalbuynowmobpic2x2-min.png);
+            }
+            @include tab{
+                background-image: url(../images/modal-buy-now/tablet/modalbuynowpic2tabx1-min.png);
+                @include retina{
+                    background-image: url(../images/modal-buy-now/tablet/modalbuynowpic2tabx2-min.png);
+                }
+            }
+            @include pc{
+                background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2deskx1-min.png);
+                @include retina{
+                    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic2deskx2-min.png);
+                }
+            }
+        }
+    }
+    
+    &__item--orange {
+        // box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+        border: 2px solid #D6936D;
+
+        &::before{
+            background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+        }
+        &::after{
+            background-image: url(../images/modal-buy-now/mobile/modalbuynowmobpic3x1-min.png);
+
+            @include retina {
+                background-image: url(../images/modal-buy-now/mobile/modalbuynowmobpic3x2-min.png);
+            }
+            @include tab{
+                background-image: url(../images/modal-buy-now/tablet/modalbuynowpic3tabx1-min.png);
+                @include retina{
+                    background-image: url(../images/modal-buy-now/tablet/modalbuynowpic3tabx2-min.png);
+                }
+            }
+            @include pc{
+                background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3deskx1-min.png);
+                @include retina{
+                    background-image: url(../images/modal-buy-now/desktop/modalbuynowpic3deskx2-min.png);
+                }
+            }
+        }
+    }
+    
+    &__text {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__input{
+        height: 32px;
+    }
+    &__comment{
+        height: 65px;
+    }
+}

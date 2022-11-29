@@ -89,15 +89,17 @@
 }
 
 .customer-review__content {
-  text-align: center;
   padding: 35px 39px;
   margin: auto;
+
+  text-align: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
 
   @include tab {
     padding: 28px 80px;
+
     font-size: 14px;
     line-height: 1.86;
   }

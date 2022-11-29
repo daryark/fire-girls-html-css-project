@@ -91,7 +91,16 @@
     margin-left: 211px;
   }
 }
-
+.menu-open-btn{
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  color: var(--primary-text-color);
+  @include pc {
+    display: none;
+  }
+}
+/*
 .menu-toggle {
   @include no-pc {
     margin-left: auto;
@@ -110,4 +119,4 @@
     }
   }
   display: none;
-}
+}*/

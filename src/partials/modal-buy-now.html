@@ -1,0 +1,65 @@
+<div class="backdrop is-hidden" data-backdrop-buy-now>
+  <div class="modal buy-now__modal">
+    <button type="button" class="modal-close" data-close-modal-buy-now>
+      <svg class="close-button" width="20" height="20">
+        <use href="./images/symbol-defs.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title buy-now__title">Buy now</h2>
+    <ul class="buy-now__list">
+      <li class="buy-now__item buy-now__item--green">
+        <div class="buy-now__text buy-now__text--green">
+          <h3 class="buy-now__title">ice cream</h3>
+        </div>
+      </li>
+      <li class="buy-now__item buy-now__item--yellow">
+        <div class="buy-now__text buy-now__text--yellow">
+          <h3 class="buy-now__title">ice coffee</h3>
+        </div>
+      </li>
+      <li class="buy-now__item buy-now__item--orange">
+        <div class="buy-now__text buy-now__text--orange">
+          <h3 class="buy-now__title">milkshake</h3>
+        </div>
+      </li>
+    </ul>
+    <form class="modal-form buy-now__form">
+      <ul class="modal-list">
+        <li class="modal-item">
+          <label for="user-name" class="modal-label"></label>
+          <input
+            type="text"
+            class="modal-input buy-now__input"
+            name="user-name"
+            minlength="2"
+            id="user-name"
+            placeholder="Name"
+            required
+          />
+        </li>
+        <li class="modal-item">
+          <label for="tel" class="modal-label"></label>
+          <input
+            type="tel"
+            class="modal-input"
+            name="user-tel"
+            id="tel"
+            placeholder="Phone"
+            required
+          />
+        </li>
+        <li class="modal-item">
+          <label for="user-comment" class="text"></label>
+          <textarea
+            name="user-comment"
+            class="modal-comment buy-now__comment"
+            id="user-comment"
+            rows="2"
+            placeholder="Comment"
+          ></textarea>
+        </li>
+      </ul>
+    </form>
+    <button type="submit" class="btn modal__btn">Submit</button>
+  </div>
+</div>
