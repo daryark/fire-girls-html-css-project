@@ -91,13 +91,19 @@
     margin-left: 211px;
   }
 }
-.menu-open-btn{
+.menu-open-btn {
   background-color: transparent;
   border: none;
   margin-left: auto;
   color: var(--primary-text-color);
+  transform: scale(1);
+  @include transition(transform);
   @include pc {
     display: none;
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.15);
   }
 }
 /*
