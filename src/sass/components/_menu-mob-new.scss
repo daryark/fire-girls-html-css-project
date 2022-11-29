@@ -1,4 +1,4 @@
-.mob-menu {  
+.mob-menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,10 +11,10 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
-    @include pc {
-        display: none;
-    }
-  
+  @include pc {
+    display: none;
+  }
+
   &__container {
     padding-top: 100px;
     padding-bottom: 64px;
@@ -25,32 +25,32 @@
     align-items: center;
 
     height: 100vh;
-    @include tab{
+    @include tab {
       padding-top: 140px;
     }
   }
-  &__logo {   
+  &__logo {
     top: 12px;
     left: 32px;
-    position: absolute;    
-    
-    color: var(--accent-color);  
+    position: absolute;
+
+    color: var(--accent-color);
 
     @include tab {
       top: 20px;
-      left: 32px;      
+      left: 32px;
     }
   }
-  &__logo-icon{
+  &__logo-icon {
     width: 40px;
     height: 37px;
-    @include tab{
+    @include tab {
       width: 48px;
       height: 44px;
     }
   }
 }
-.menu-close{
+.menu-close {
   position: absolute;
   display: block;
   background-color: transparent;
@@ -58,28 +58,34 @@
   top: 16px;
   right: 20px;
   color: var(--primary-text-color);
-  @include tab{
+
+  transform: scale(1);
+  @include transition(transform);
+  @include tab {
     top: 32px;
     right: 32px;
   }
-}
 
+  &:hover,
+  &:focus {
+    transform: scale(0.8);
+  }
+}
 
 .mobile__menu {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
+  @include flex();
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 32px;
-  @include tab{
+
+  @include tab {
     gap: 40px;
   }
 }
 
-.mobile__menu-link { 
+.mobile__menu-link {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.22;
@@ -91,19 +97,19 @@
   &:focus {
     color: var(--secondary-text-color);
   }
-  @include tab{
+  @include tab {
     font-size: 48px;
   }
 }
 
 .mobile__menu-button {
-  display: block;  
+  display: block;
 
   @include mob {
     display: none;
   }
 }
 
-.is-hidden{
+.is-hidden {
   transform: translateX(100%);
 }
