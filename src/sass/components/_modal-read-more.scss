@@ -14,8 +14,6 @@
     min-height: 449px;
   }
   &__title {
-    margin-bottom: 0;
-
     font-size: 16px;
     line-height: 1.5;
 
@@ -46,4 +44,8 @@
       font-size: 16px;
     }
   }
+}
+
+h2.read-more__title{
+  margin-bottom: 0;
 }
