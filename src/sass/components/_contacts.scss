@@ -115,12 +115,17 @@
   &__address {
     max-width: 212px;
     color: #d6936d;
+    @include transition();
     @include tab {
       max-width: 173px;
       min-height: 71px;
     }
     @include pc {
       max-width: 288px;
+    }
+    &:hover,
+    &:focus {
+      color: #f08f56;
     }
   }
   &__working-time {

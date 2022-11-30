@@ -14,6 +14,6 @@ refs.openModalBtnMilkshakes.addEventListener('click', toggleModal);
 refs.closeModalBtn.addEventListener('click', toggleModal);
 
 function toggleModal() {
-  document.body.classList.toggle('data-open-modal-ingridients');
+  document.body.classList.toggle('data-open-modal-ingredients');
   refs.backdrop.classList.toggle('is-hidden');
 }
