@@ -16,6 +16,7 @@
 }
 
 .ingridients__list {
+  margin-top: 174px;
   margin-bottom: 40px;
 
   position: relative;
@@ -27,8 +28,9 @@
   }
 
   @include pc {
-    @include grid(20px);
+    margin-top: 178px;
     margin-bottom: 48px;
+    @include grid(20px);
   }
 
   &::before {
