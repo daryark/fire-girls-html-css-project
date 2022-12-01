@@ -1,6 +1,5 @@
 .modal__title {
   margin-bottom: 181px;
-  min-width: 280px;
   text-align: center;
 
   font-family: var(--secondary-font);
@@ -10,7 +9,6 @@
 
   color: var(--secondary-text-color);
   @include tab {
-    min-width: 568px;
     margin-bottom: 187px;
   }
 }
