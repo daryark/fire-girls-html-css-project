@@ -1,6 +1,5 @@
 .modal__title {
   margin-bottom: 181px;
-  min-width: 280px;
   text-align: center;
 
   font-family: var(--secondary-font);
@@ -10,7 +9,6 @@
 
   color: var(--secondary-text-color);
   @include tab {
-    min-width: 568px;
     margin-bottom: 187px;
   }
 }
@@ -22,12 +20,10 @@
   position: relative;
   display: flex;
   justify-content: center;
+  @include grid(9px);
+  flex-wrap: nowrap;
 
-  @include mob {
-    @include grid(9px);
-  }
-
-  @include pc {
+  @include tab {
     margin-top: 178px;
     margin-bottom: 48px;
     @include grid(20px);

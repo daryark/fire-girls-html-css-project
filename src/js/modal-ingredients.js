@@ -15,5 +15,8 @@ refs.closeModalBtn.addEventListener('click', toggleModal);
 
 function toggleModal() {
   document.body.classList.toggle('data-open-modal-ingredients');
+  // document.body.classList.toggle('data-open-modal-ice-cream');
+  // document.body.classList.toggle('data-open-modal-ice-coffee');
+  // document.body.classList.toggle('data-open-modal-milkshakes');
   refs.backdrop.classList.toggle('is-hidden');
 }

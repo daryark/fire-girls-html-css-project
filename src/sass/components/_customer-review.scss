@@ -32,10 +32,19 @@
 }
 .customer-review__swiper {
   position: relative;
-  padding-top: 178px;
+  padding-top: 168px;
   display: block;
   overflow: hidden;
 
+  @media screen and(min-width:360px) {
+    padding-top: 178px;
+  }
+  @media screen and(min-width: 415px) {
+    padding-top: 188px;
+  }
+  @media screen and(min-width: 460px) {
+    padding-top: 198px;
+  }
   @include tab {
     padding-top: 283px;
   }
