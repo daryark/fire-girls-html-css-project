@@ -1,25 +1,24 @@
 .loc-modal {
+  @include flex();
+  flex-direction: column;
   min-height: 365px;
 
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   @include tab {
     min-height: 458px;
   }
   &__title {
-    font-family: 'Seymour One', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+
+    font-family: var(--secondary-font);
     font-size: 16px;
     line-height: 1.5;
+
     color: var(--secondary-text-color);
-    text-align: center;
-    margin-bottom: 20px;
     @include tab {
       margin-bottom: 32px;
       font-size: 20px;
@@ -27,10 +26,8 @@
     }
   }
   &__link-map {
-    display: flex;
+    @include flex();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   &__img-map {
     margin-bottom: 24px;
@@ -49,48 +46,49 @@
     }
   }
 }
+
+// Franchise
 .franc-modal {
+  @include flex();
+  flex-direction: column;
   max-width: 280px;
   min-height: 674px;
+
   top: 0;
   left: 50%;
   transform: translate(-50%, 0) scale(1);
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   @include tab {
     width: 448px;
     height: 604px;
   }
 
   &__title {
+    margin-bottom: 20px;
     width: 221px;
     text-align: center;
     letter-spacing: normal;
-    margin-bottom: 20px;
 
     @include tab {
+      margin-bottom: 24px;
       width: 322px;
       text-align: center;
-      margin-bottom: 24px;
     }
   }
   &__text {
-    width: 222px;
     margin-bottom: 24px;
+    width: 222px;
+    text-align: justify;
 
     font-weight: 400;
     font-size: 14px;
     line-height: 1.4;
     color: var(--secondary-text-color);
-    text-align: justify;
     letter-spacing: normal;
 
     @include tab {
-      width: 448px;
       margin-bottom: 32px;
+      width: 448px;
       font-size: 16px;
     }
   }

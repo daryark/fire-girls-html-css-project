@@ -20,15 +20,12 @@
   position: relative;
   display: flex;
   justify-content: center;
-
-  @include mob {
-    @include grid(9px);
-  }
+  gap: 9px;
 
   @include tab {
     margin-top: 178px;
     margin-bottom: 48px;
-    @include grid(20px);
+    gap: 20px;
   }
 
   &::before {
