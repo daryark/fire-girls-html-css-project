@@ -14,7 +14,7 @@
   border-color: transparent;
   outline: none;
 
-  @include transition-double(background-color);
+  @include transition-triple(background-color, transform, box-shadow);
   &:hover {
     background-color: var(--button-hover);
     transform: translateY(-2px);

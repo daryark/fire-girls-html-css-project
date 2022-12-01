@@ -29,7 +29,7 @@
   transition: border 250ms;
 
   &:focus {
-    border: 1px solid var(--secondary-text-color);
+    border: 2px solid var(--accent-color);
   }
 }
 
@@ -53,7 +53,7 @@
   resize: none;
   display: block;
   &:focus {
-    border: 1px solid var(--secondary-text-color);
+    border: 2px solid var(--accent-color);
   }
 }
 
@@ -62,7 +62,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
-  color: var(--secondary-text-color);
+  color: var(--bg-color);
 }
 
 .modal-comment:focus {
