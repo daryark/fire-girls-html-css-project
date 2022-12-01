@@ -25,7 +25,7 @@
     @include grid(9px);
   }
 
-  @include pc {
+  @include tab {
     margin-top: 178px;
     margin-bottom: 48px;
     @include grid(20px);

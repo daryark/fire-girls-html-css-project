@@ -37,3 +37,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #e2b924;
 }
+body.data-open-modal-buy-now,
+body.data-open-modal-franc,
+body.data-open-modal-loc,
+body.data-open-modal-milkshakes,
+body.data-open-modal-ingredients {
+  overflow: hidden;
+}
