@@ -85,7 +85,7 @@
 
 .product__list {
   justify-content: center;
-  @include grid(168px, nowrap);
+  @include grid(168px);
 
   @include tab {
     @include grid(16px, nowrap);
