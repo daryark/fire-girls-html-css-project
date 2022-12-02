@@ -1,3 +1,5 @@
+import './js/sticky-button';
+
 import './js/menu';
 import './js/modal-loc';
 import './js/modal-ingredients';

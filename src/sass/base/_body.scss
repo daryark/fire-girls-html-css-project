@@ -1,11 +1,11 @@
 body {
-  background-color: var(--bg-color);
-  color: var(--primary-text-color);
-
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   letter-spacing: var(--letter-spacing);
   line-height: var(--line-height-auto);
+
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
 
   @include tab {
     font-size: 14px;

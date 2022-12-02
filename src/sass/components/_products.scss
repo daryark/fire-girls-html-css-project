@@ -85,14 +85,14 @@
 
 .product__list {
   justify-content: center;
-  @include grid(168px);
+  @include grid(168px, nowrap);
 
   @include tab {
-    @include grid(16px);
+    @include grid(16px, nowrap);
   }
 
   @include pc {
-    @include grid(29px);
+    @include grid(29px, nowrap);
   }
 }
 
