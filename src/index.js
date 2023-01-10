@@ -9,3 +9,5 @@ import './js/gallery-swiper';
 import './js/customer-review-swiper';
 import './js/sound-cow';
 import './js/modal-buy-now';
+
+console.log('-');
